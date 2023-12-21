@@ -1,11 +1,17 @@
 import React from "react";
 import './App.css';
 
-const HeaderBarOptions = ["test1", "test2", "test3", "test4"];
+const HeaderBarOptions = ["about", "education", "work experience", "links"];
 
-export function HeaderBar(): JSX.Element {
+export function HeaderBar({
+    parentHeight,
+    parentWidth
+}:{
+    parentHeight: number,
+    parentWidth: number,
+    }): JSX.Element {
     return (
-        <div className = "header-bar">
+        <div className = "header-bar" style={{width: .8 * parentWidth + "px", height: .05 * parentHeight + "px"}}>
             
             {HeaderBarOptions.map((option, _) => (
                 <div className ="header-button"> {option} </div>

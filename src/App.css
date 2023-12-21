@@ -1,43 +1,57 @@
 :root {
-    --main-bg-color: #282c34;
-    --header-bg-color: green;
+    /* Window Size */
     --windowHeight: 100vh;
     --windowWidth: 100vw;
-}
 
-body {
-    overflow: auto;
+    /* Header */
+    --header-width: calc(var(--windowWidth) * .75);
+    --header-height: calc(var(--windowHeight) * .04);
+    --header-button-border-color: black;
+
+    /* Colors */
+    --main-bg-color: #282c34;
+    --header-bg-color: green;
 }
 
 .App {
-    position: absolute;
+    position: static;
     background-color: var(--main-bg-color);
-    width: 100%;
-    height: 100%;
+
     text-align: center;
     justify-content: center;
     align-items: center;
+
+    overflow: auto;
 }
 
 .header-bar {
     position: absolute;
     background-color: var(--header-bg-color);
-    /* width: calc(var(--windowWidth) * .6);
-    /* height: calc(var(--windowHeight) * .1); */
-    width: 1152px;
-    height: 80px;
-    left: 50%;
-    transform: translate(-576px);
+    
+    width: 80%;
+    height: 5%;
+
+    /* width: 1440px;
+    height: 54px; */
+    
+    top: 0px;
+    left: 10%;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 45px;
 }
 
 .header-button {
     flex: 1;
+    
     text-align: center;
+    line-height: calc(var(--header-height) * .75);
+    font-size: calc(var(--header-height) * .75);
+
     background-color: red;
+    border: 2px solid var(--header-button-border-color);
+    margin: 0 -1px
 }
 
 .App-logo {
