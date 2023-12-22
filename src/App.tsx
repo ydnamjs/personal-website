@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import { HeaderBar } from './HeaderBar';
-import useCustomZoom from './customZoom'
+import { useCustomZoom } from './betterScale/betterZoom';
+import { useViewportMonitor } from './betterScale/monitorViewport';
 
 /*
 interface sizeParams {
@@ -19,7 +20,8 @@ function App() {
   
     const [zoomLevel, setZoomLevel] = useState(1);
 
-    useCustomZoom({setViewportHeight, setViewportWidth, zoomLevel, setZoomLevel});
+    useViewportMonitor(setViewportWidth, setViewportHeight);
+    useCustomZoom(zoomLevel, setZoomLevel);
     
     return (
     <div 
