@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import { HeaderBar } from './HeaderBar';
+import { NavigationBar } from './navigationBar/navigationBar';
 import { useCustomZoom } from './betterScale/betterZoom';
 import { useViewportMonitor } from './betterScale/monitorViewport';
 
-/*
-interface sizeParams {
-    parentWidth: number,
-    parentHeight: number,
-    scaleFactor: number
-}
-*/
+/* CONSTANTS */
+const NAV_BAR_WIDTH_RATION = .8;
+const NAV_BAR_HEIGHT_RATIO = .05;
+
 
 function App() {
     
@@ -23,12 +20,18 @@ function App() {
     useViewportMonitor(setViewportWidth, setViewportHeight);
     useCustomZoom(zoomLevel, setZoomLevel);
     
+
+    //const [activeSection, setActiveSection] = useState<>
+
+    const navBarWidth = NAV_BAR_WIDTH_RATION * zoomLevel * viewportWidth;
+    const navBarHeight = NAV_BAR_HEIGHT_RATIO * zoomLevel * viewportHeight;
+
     return (
     <div 
         style={{width: zoomLevel * viewportWidth + "px", height: zoomLevel * viewportHeight + "px"}} 
         className="App"
     >
-    <HeaderBar parentHeight={zoomLevel * viewportHeight} parentWidth={zoomLevel * viewportWidth}></HeaderBar>
+    <NavigationBar style={ {width: navBarWidth + "px", height: navBarHeight + "px"}}></NavigationBar>
     </div>
   );
 }

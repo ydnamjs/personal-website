@@ -24,36 +24,6 @@
     overflow: auto;
 }
 
-.header-bar {
-    position: absolute;
-    background-color: var(--header-bg-color);
-    
-    width: 80%;
-    height: 5%;
-
-    /* width: 1440px;
-    height: 54px; */
-    
-    top: 0px;
-    left: 10%;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.header-button {
-    flex: 1;
-    
-    text-align: center;
-    line-height: calc(var(--header-height) * .75);
-    font-size: calc(var(--header-height) * .75);
-
-    background-color: red;
-    border: 2px solid var(--header-button-border-color);
-    margin: 0 -1px
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
