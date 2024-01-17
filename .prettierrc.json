@@ -17,5 +17,11 @@
 	"htmlWhitespaceSensitivity": "ignore",
 	"endOfLine": "lf",
 	"embeddedLanguageFormatting": "auto",
-	"singleAttributePerLine": false
+	"singleAttributePerLine": false,
+	"overrides": [
+		{
+			"files": "*.json",
+			"options": {"parser": "json"}
+		}
+	]
 }
