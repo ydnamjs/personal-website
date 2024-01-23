@@ -1,0 +1,12 @@
+.Navigation-Button--Selected {
+	background-color: transparent;
+	border: none;
+	text-decoration: underline white;
+	color: white;
+}
+
+.Navigation-Button--Unselected {
+	background-color: transparent;
+	border: none;
+	color: white;
+}
