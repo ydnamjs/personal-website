@@ -21,7 +21,7 @@ const NavButtonWrapper = ({initialCategory}: {initialCategory: string}) => {
 	);
 };
 
-describe("Navigation Button Component Tests", () => {
+describe("Navigation Button Unit Tests", () => {
 	test("Navigation Button uses selected style when initial category matches", () => {
 		render(<NavButtonWrapper initialCategory={BUTTON_CATEGORY} />);
 
