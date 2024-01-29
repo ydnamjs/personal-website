@@ -1,5 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from "react";
+import "../NavigationController.css";
+import {NavigationButton} from "./NavigationButton";
 
 export function NavigationBar({
 	categories,
@@ -10,5 +11,18 @@ export function NavigationBar({
 	selectedCategory: string;
 	setSelectedCategory: (category: string) => void;
 }): JSX.Element {
-	return <div />;
+	return (
+		<div className="Navigation-Bar">
+			{categories.map((category: string) => {
+				return (
+					<NavigationButton
+						buttonCategory={category}
+						selectedCategory={selectedCategory}
+						setSelectedCategory={setSelectedCategory}
+						key={category}
+					></NavigationButton>
+				);
+			})}
+		</div>
+	);
 }

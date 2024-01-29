@@ -1,12 +1,18 @@
+.Navigation-Bar {
+	background-color: black;
+}
+
 .Navigation-Button--Selected {
 	background-color: transparent;
 	border: none;
 	text-decoration: underline white;
 	color: white;
+	font-size: 2rem;
 }
 
 .Navigation-Button--Unselected {
 	background-color: transparent;
 	border: none;
 	color: white;
+	font-size: 2rem;
 }
