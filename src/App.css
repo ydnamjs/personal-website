@@ -16,9 +16,3 @@
 	position: absolute;
 	z-index: -1;
 }
-
-.panel-text {
-	position: relative;
-	width: 100%;
-	word-wrap: break-word;
-}

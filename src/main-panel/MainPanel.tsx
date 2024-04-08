@@ -1,6 +1,5 @@
-import React, {useState} from "react";
+import React, {PropsWithChildren, useState} from "react";
 import "./MainPanel.css";
-import pictureOfMe from "../assets/MichaelSnead.jpg";
 import {useViewportMonitor} from "../ViewportMonitor";
 
 const MAX_ASPECT_RATIO = 16.0 / 9.0;
@@ -40,7 +39,7 @@ function leftCalculator(viewportWidth: number, viewportHeight: number): string {
 	);
 }
 
-export function MainPanel() {
+export function MainPanel(props: PropsWithChildren) {
 	const [viewportWidth, setViewportWidth] = useState(
 		window.innerWidth || document.documentElement.clientWidth,
 	);
@@ -58,7 +57,8 @@ export function MainPanel() {
 				left: leftCalculator(viewportWidth, viewportHeight),
 			}}
 		>
-			<img src={pictureOfMe} style={{maxInlineSize: "100%"}}></img>
+			{props.children}
+			{/* <img src={pictureOfMe} style={{maxInlineSize: "100%"}}></img>
 			<h1>About Me</h1>
 			<p>I am a person I like to code</p>
 			<p>This is a 2nd paragraph</p>
@@ -71,7 +71,7 @@ export function MainPanel() {
 				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
 				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
 				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>E
-			</span>
+			</span> */}
 		</div>
 	);
 }

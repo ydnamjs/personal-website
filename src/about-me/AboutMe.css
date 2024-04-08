@@ -1,0 +1,26 @@
+.panel-container {
+	position: relative;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+
+	/* background-color: orange; */
+}
+
+.self-picture {
+	float: left;
+	margin-right: 20px;
+	max-inline-size: 100%;
+	border-color: green;
+	border-style: groove;
+}
+
+/* .section {
+} */
+
+.panel-text {
+	position: relative;
+	text-align: justify;
+	width: 100%;
+	word-wrap: break-word;
+}
