@@ -17,24 +17,8 @@
 	z-index: -1;
 }
 
-.main-panel {
-	position: relative;
-	top: 0;
-	background-color: blue;
-	min-width: 75vw;
-	min-height: 100vh;
-	left: 12.5%;
-	width: max(100vh, 75vw);
-	margin: 0;
-	padding: 0;
-}
-
 .panel-text {
 	position: relative;
 	width: 100%;
 	word-wrap: break-word;
 }
-
-/* .picture {
-
-} */
