@@ -5,24 +5,43 @@ import pictureOfMe from "../assets/MichaelSnead.jpg";
 export function AboutMe() {
 	return (
 		<div className="panel-container">
-			<img src={pictureOfMe} className="self-picture"></img>
-			<div className="panel-text">
-				<h1 className="panel-text">About Me</h1>
-				<p className="panel-text">I am a person I like to code</p>
-				<p>This is a 2nd paragraph</p>
-				<p className="panel-text">
-					aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-				</p>
+			<div className="title-bar">
+				<img src={pictureOfMe} className="self-picture"></img>
+				<div className="title-text-box panel">
+					<h1>About Me</h1>
+					<p>This is the 1st paragraph</p>
+					<p>This is a 2nd paragraph</p>
+					<p>
+						this is sample text this is sample text this is sample text this is sample
+						text this is sample text this is sample text this is sample text this is
+						sample text this is sample text this is sample text this is sample text this
+						is sample text this is sample text this is sample text this is sample text
+						this is sample text this is sample text this is sample text this is sample
+						text
+					</p>
+				</div>
 			</div>
-			<div className="panel-text">
+			<div className="panel">
 				<h1>Education</h1>
-				<span className="panel-text">I went to school</span>
-				<span>
-					<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
-					<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
-					<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
-					<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>E
-				</span>
+				<p>
+					I went to school I went to school I went to school I went to school I went to
+					school I went to school I went to school I went to school I went to school I
+					went to school I went to school I went to school I went to school I went to
+					school I went to school I went to school I went to school I went to school I
+					went to school
+				</p>
+				<span>This is a span</span>
+				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
+				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
+				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
+				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
+				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
+				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
+				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
+				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
+				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
+				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
+				<br></br>a<br></br>a
 			</div>
 		</div>
 	);

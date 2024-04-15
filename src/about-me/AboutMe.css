@@ -1,26 +1,69 @@
+:root {
+	--panel-background: #252625;
+	--panel-margins: 2rem;
+}
+
 .panel-container {
 	position: relative;
-	padding-top: 20px;
-	padding-right: 20px;
-	padding-left: 20px;
+	padding-bottom: var(--panel-margins);
+}
 
-	/* background-color: orange; */
+.title-bar {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .self-picture {
-	float: left;
-	margin-right: 20px;
-	max-inline-size: 100%;
-	border-color: green;
-	border-style: groove;
+	display: inline;
+
+	width: 24rem;
+	height: 24rem;
+
+	margin-left: var(--panel-margins);
+	margin-top: var(--panel-margins);
+
+	box-shadow: 5px 5px 5px black;
+
+	/* border-color: #1e5128;
+	border-width: 1rem;
+	border-style: solid; */
 }
 
-/* .section {
-} */
+.title-text-box {
+	flex: 1;
+	display: inline;
+	min-width: 24rem;
+}
 
-.panel-text {
-	position: relative;
+.panel {
+	max-width: 100%;
+
+	margin-top: var(--panel-margins);
+	margin-right: var(--panel-margins);
+	margin-left: var(--panel-margins);
+
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+	border-radius: 0.5rem;
+	box-shadow: 5px 5px 5px black;
+
+	background-color: var(--panel-background);
+}
+
+.panel h1 {
 	text-align: justify;
-	width: 100%;
-	word-wrap: break-word;
+	word-break: normal;
+	white-space: normal;
+	margin-top: 0;
+}
+
+.panel p,
+.panel span {
+	text-align: justify;
+	word-break: normal;
+	white-space: normal;
 }

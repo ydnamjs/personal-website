@@ -1,7 +1,8 @@
 .main-panel {
 	position: relative;
 	top: 0;
-	background-color: blue;
+	background-color: #191a19;
+	color: white;
 	min-width: 75vw;
 	min-height: 100vh;
 }
