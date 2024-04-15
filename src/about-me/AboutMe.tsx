@@ -6,8 +6,8 @@ export function AboutMe() {
 	return (
 		<div className="panel-container">
 			<div className="title-bar">
-				<img src={pictureOfMe} className="self-picture"></img>
-				<div className="title-text-box panel">
+				<img src={pictureOfMe} className="self-picture shadow"></img>
+				<div className="title-text-box panel shadow">
 					<h1>About Me</h1>
 					<p>This is the 1st paragraph</p>
 					<p>This is a 2nd paragraph</p>
@@ -21,7 +21,7 @@ export function AboutMe() {
 					</p>
 				</div>
 			</div>
-			<div className="panel">
+			<div className="panel shadow">
 				<h1>Education</h1>
 				<p>
 					I went to school I went to school I went to school I went to school I went to
