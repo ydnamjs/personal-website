@@ -25,6 +25,7 @@
 	display: inline;
 
 	flex-basis: 24rem;
+	height: auto;
 
 	min-width: 0;
 	min-height: 0;
