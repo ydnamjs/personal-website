@@ -7,7 +7,6 @@ export function Intro() {
 			<p style={{fontSize: "48px"}}>Hello!</p>
 			<p>I’m Michael Snead: </p>
 			<p>A computer scientist with a passion for creating</p>
-			<p>Below are some more details</p>
 		</div>
 	);
 }
