@@ -29,7 +29,7 @@ export function OtherInterests() {
 			<div className="image-row">
 				<SquareImgCard image={payDay2} title={"Payday 2"}></SquareImgCard>
 				<SquareImgCard image={furi} title={"Furi"}></SquareImgCard>
-				<SquareImgCard image={zombies} title={"Zombies"}></SquareImgCard>
+				<SquareImgCard image={zombies} title={"COD: Zombies"}></SquareImgCard>
 				<SquareImgCard image={bloons} title={"Bloons TD6"}></SquareImgCard>
 			</div>
 			<h2>Music</h2>
