@@ -12,6 +12,8 @@
 .panel-container h1 {
 	text-align: center;
 	font-size: 48px;
+	margin-top: var(--panel-margins);
+	margin-bottom: var(--panel-margins);
 }
 
 .title-bar {
@@ -32,10 +34,6 @@
 
 	margin-left: var(--panel-margins);
 	margin-top: var(--panel-margins);
-
-	/* border-color: #1e5128;
-	border-width: 1rem;
-	border-style: solid; */
 }
 
 .title-text-box {
@@ -52,10 +50,10 @@
 	margin-top: var(--panel-margins);
 	margin-left: var(--panel-margins);
 
-	padding-bottom: 1rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-top: 1rem;
+	padding-bottom: 1.25%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	padding-top: 1.25%;
 
 	border-radius: 0.5rem;
 
@@ -69,7 +67,7 @@
 .panel p,
 .panel span,
 .panel li {
-	word-break: normal;
+	word-break: break-word;
 	white-space: normal;
 	font-size: 24px;
 }
@@ -99,10 +97,3 @@
 	flex-direction: row;
 	justify-content: center;
 }
-
-/* .image-row img {
-	display: inline;
-	flex-basis: 230px;
-	flex: 1;
-	min-width: 230px;
-} */
