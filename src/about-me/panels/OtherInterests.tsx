@@ -35,26 +35,26 @@ export function OtherInterests() {
 			<h2>Music</h2>
 			<p>Below are some of my favorite albums</p>
 			<div className="image-row">
-				<SquareImgCard image={cargo} title={"Cargo By Men At Work"}></SquareImgCard>
+				<SquareImgCard image={cargo} title={'"Cargo" By Men At Work'}></SquareImgCard>
 				<SquareImgCard
 					image={nothingHappens}
-					title={"Nothing Happens by Wallows"}
+					title={'"Nothing Happens" by Wallows'}
 				></SquareImgCard>
 				<SquareImgCard
 					image={onlyALad}
-					title={"Only A Lad by Oingo Boingo"}
+					title={'"Only A Lad" by Oingo Boingo'}
 				></SquareImgCard>
 				<SquareImgCard
 					image={openYourEyes}
-					title={"Open Your Eyes by Goldfinger"}
+					title={'"Open Your Eyes" by Goldfinger'}
 				></SquareImgCard>
 				<SquareImgCard
 					image={randomAccessMemories}
-					title={"Random Access Memories by Daft Punk"}
+					title={'"Random Access Memories" by Daft Punk'}
 				></SquareImgCard>
 				<SquareImgCard
 					image={remainInLight}
-					title={"Remain In Light by Talking Heads"}
+					title={'"Remain In Light" by Talking Heads'}
 				></SquareImgCard>
 			</div>
 		</div>
