@@ -13,6 +13,7 @@ import onlyALad from "../../assets/music/OnlyALad.jpg";
 import openYourEyes from "../../assets/music/OpenYourEyes.jpg";
 import randomAccessMemories from "../../assets/music/RandomAccessMemories.jpg";
 import remainInLight from "../../assets/music/RemainInLight.jpg";
+import {SquareImgCard} from "../SquareImgCard";
 
 export function OtherInterests() {
 	return (
@@ -26,20 +27,35 @@ export function OtherInterests() {
 				Furi, and recently Bloons TD 6.
 			</p>
 			<div className="image-row">
-				<img src={payDay2} alt="Pay Day 2 banner" />
-				<img src={furi} alt="Furi banner" />
-				<img src={zombies} alt="Black Ops 3 screenshot" />
-				<img src={bloons} alt="BTD6 Banner" />
+				<SquareImgCard image={payDay2} title={"Payday 2"}></SquareImgCard>
+				<SquareImgCard image={furi} title={"Furi"}></SquareImgCard>
+				<SquareImgCard image={zombies} title={"COD: Zombies"}></SquareImgCard>
+				<SquareImgCard image={bloons} title={"Bloons TD6"}></SquareImgCard>
 			</div>
 			<h2>Music</h2>
 			<p>Below are some of my favorite albums</p>
 			<div className="image-row">
-				<img src={cargo} alt="cargo album cover" />
-				<img src={nothingHappens} alt="nothing happens album cover" />
-				<img src={onlyALad} alt="only a lad album cover" />
-				<img src={openYourEyes} alt="open your eyes album cover" />
-				<img src={randomAccessMemories} alt="random access memories album cover" />
-				<img src={remainInLight} alt="remain in light album cover" />
+				<SquareImgCard image={cargo} title={"Cargo By Men At Work"}></SquareImgCard>
+				<SquareImgCard
+					image={nothingHappens}
+					title={"Nothing Happens by Wallows"}
+				></SquareImgCard>
+				<SquareImgCard
+					image={onlyALad}
+					title={"Only A Lad by Oingo Boingo"}
+				></SquareImgCard>
+				<SquareImgCard
+					image={openYourEyes}
+					title={"Open Your Eyes by Goldfinger"}
+				></SquareImgCard>
+				<SquareImgCard
+					image={randomAccessMemories}
+					title={"Random Access Memories by Daft Punk"}
+				></SquareImgCard>
+				<SquareImgCard
+					image={remainInLight}
+					title={"Remain In Light by Talking Heads"}
+				></SquareImgCard>
 			</div>
 		</div>
 	);
