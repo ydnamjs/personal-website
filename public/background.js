@@ -57,12 +57,22 @@ for (let i = 0; i < NUM_SLIMES; i++) {
 
 function Animate() {
 	context.clearRect(0, 0, window.innerWidth, window.innerHeight);
-	context.fillStyle = SLIME_COLOR;
+	canvas = document.getElementById("background");
 
-	slimes.forEach((slime) => {
-		slime.ProgressFrame();
-		slime.Draw();
-	});
+	try {
+		context = canvas.getContext("2d");
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+
+		context.fillStyle = SLIME_COLOR;
+
+		slimes.forEach((slime) => {
+			slime.ProgressFrame();
+			slime.Draw();
+		});
+	} catch (e) {
+		("all is good");
+	}
 
 	requestAnimationFrame(Animate);
 }

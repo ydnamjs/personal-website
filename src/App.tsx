@@ -18,7 +18,6 @@ function App() {
 			document.body.appendChild(script);
 			return () => {
 				script.remove();
-				console.log("removed");
 			};
 		}
 	}, [motionEnabled]);
@@ -33,16 +32,16 @@ function App() {
 			</MainPanel>
 			{motionEnabled && <canvas id="background" />}
 			{!motionEnabled && <div id="background" />}
-			{motionEnabled && (
+			{
 				<button
 					id="toggle-motion-button"
 					onClick={() => {
 						setMotionEnabled(!motionEnabled);
 					}}
 				>
-					Disable Motion
+					{motionEnabled ? "Disable Motion" : "Enable Motion"}
 				</button>
-			)}
+			}
 		</div>
 	);
 }
