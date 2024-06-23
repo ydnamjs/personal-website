@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import "./App.css";
-// import {MainPanel} from "./main-panel/MainPanel";
-// import {AboutMe} from "./about-me/AboutMe";
+import {MainPanel} from "./main-panel/MainPanel";
+import {AboutMe} from "./about-me/AboutMe";
 import {Helmet} from "react-helmet";
 
 let scriptAttached = false;
@@ -27,9 +27,9 @@ function App() {
 			<Helmet>
 				<title>Michael Snead</title>
 			</Helmet>
-			{/* <MainPanel>
+			<MainPanel>
 				<AboutMe></AboutMe>
-			</MainPanel> */}
+			</MainPanel>
 			{motionEnabled && <canvas id="background" />}
 			{!motionEnabled && <div id="background" />}
 			{
