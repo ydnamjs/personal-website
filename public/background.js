@@ -22,7 +22,7 @@ class Slime {
 	}
 
 	Reset() {
-		this.x = Math.random() * window.innerWidth;
+		this.x = Math.random();
 		this.y = SLIME_START_HEIGHT;
 		this.radius = Math.random() * MAX_STARTING_RADIUS;
 		this.growthRate = Math.random() * (MAX_GROWTH_RATE - MIN_GROWTH_RATE) + MIN_GROWTH_RATE;
@@ -45,7 +45,7 @@ class Slime {
 
 	Draw() {
 		context.beginPath();
-		context.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+		context.arc(this.x * window.innerWidth, this.y, this.radius, 0, Math.PI * 2);
 		context.fill();
 	}
 }
