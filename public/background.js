@@ -1,5 +1,5 @@
-const canvas = document.getElementById("background");
-const context = canvas.getContext("2d");
+let canvas = document.getElementById("background");
+let context = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 

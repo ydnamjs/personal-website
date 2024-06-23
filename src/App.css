@@ -16,3 +16,12 @@
 	z-index: -1;
 	position: fixed;
 }
+
+#toggle-motion-button {
+	position: fixed;
+	top: 85%;
+	right: 0%;
+	font-size: 24px;
+	background-color: #1e1f1e;
+	color: white;
+}

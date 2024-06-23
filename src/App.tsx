@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import "./App.css";
 import {MainPanel} from "./main-panel/MainPanel";
 import {AboutMe} from "./about-me/AboutMe";
@@ -7,6 +7,8 @@ import {Helmet} from "react-helmet";
 let scriptAttached = false;
 
 function App() {
+	const [motionEnabled, setMotionEnabled] = useState(true);
+
 	useEffect(() => {
 		if (!scriptAttached) {
 			scriptAttached = true;
@@ -16,9 +18,10 @@ function App() {
 			document.body.appendChild(script);
 			return () => {
 				script.remove();
+				console.log("removed");
 			};
 		}
-	}, []);
+	}, [motionEnabled]);
 
 	return (
 		<div className="container">
@@ -28,7 +31,18 @@ function App() {
 			<MainPanel>
 				<AboutMe></AboutMe>
 			</MainPanel>
-			<canvas id="background" />
+			{motionEnabled && <canvas id="background" />}
+			{!motionEnabled && <div id="background" />}
+			{motionEnabled && (
+				<button
+					id="toggle-motion-button"
+					onClick={() => {
+						setMotionEnabled(!motionEnabled);
+					}}
+				>
+					Disable Motion
+				</button>
+			)}
 		</div>
 	);
 }
