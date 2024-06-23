@@ -58,20 +58,6 @@ export function MainPanel(props: PropsWithChildren) {
 			}}
 		>
 			{props.children}
-			{/* <img src={pictureOfMe} style={{maxInlineSize: "100%"}}></img>
-			<h1>About Me</h1>
-			<p>I am a person I like to code</p>
-			<p>This is a 2nd paragraph</p>
-			<p className="panel-text">
-				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-			</p>
-			<h1>Education</h1>
-			<span className="panel-text">I went to school</span>
-			<span>
-				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
-				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a
-				<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>E
-			</span> */}
 		</div>
 	);
 }
