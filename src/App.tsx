@@ -1,47 +1,15 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import "./App.css";
-import {MainPanel} from "./main-panel/MainPanel";
-import {AboutMe} from "./about-me/AboutMe";
 import {Helmet} from "react-helmet";
-
-let scriptAttached = false;
+import {AboutMe} from "./pages/about-me/AboutMe";
 
 function App() {
-	const [motionEnabled, setMotionEnabled] = useState(true);
-
-	useEffect(() => {
-		if (!scriptAttached) {
-			scriptAttached = true;
-			const script = document.createElement("script");
-			script.src = process.env.PUBLIC_URL + "/background.js";
-			script.async = true;
-			document.body.appendChild(script);
-			return () => {
-				script.remove();
-			};
-		}
-	}, []);
-
 	return (
-		<div className="container">
+		<div className="background">
 			<Helmet>
 				<title>Michael Snead</title>
 			</Helmet>
-			<MainPanel>
-				<AboutMe></AboutMe>
-			</MainPanel>
-			{motionEnabled && <canvas id="background" />}
-			{!motionEnabled && <div id="background" />}
-			{
-				<button
-					id="toggle-motion-button"
-					onClick={() => {
-						setMotionEnabled(!motionEnabled);
-					}}
-				>
-					{motionEnabled ? "Disable Motion" : "Enable Motion"}
-				</button>
-			}
+			<AboutMe></AboutMe>
 		</div>
 	);
 }

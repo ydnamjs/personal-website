@@ -1,0 +1,4 @@
+.picture-section {
+	max-height: 200px;
+	flex-grow: 0;
+}
