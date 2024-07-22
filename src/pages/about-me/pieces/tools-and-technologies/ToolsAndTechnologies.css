@@ -1,7 +1,4 @@
-.tools-and-technology-section--dark {
-	grid-area: experience;
-	margin: 10px;
+.tools-and-technology-section {
+	text-align: left;
 	padding: 25px;
-	border-radius: 10px;
-	background-color: #2d2e2d;
 }

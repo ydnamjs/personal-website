@@ -2,7 +2,7 @@ import React from "react";
 import "./ToolsAndTechnologiesGraph.css";
 
 const MACHINE_LEARNING_ITEMS = ["Python", "PyTorch", "OpenCV"];
-const MACHINE_LEARNING_EXPERIENCE = [4, 2, 1];
+const MACHINE_LEARNING_EXPERIENCE = [4, 1, 1];
 const MACHINE_LEARNING_Y_INTERVAL = 1;
 const MACHINE_LEARNING_Y_LEVELS = 5;
 
@@ -18,6 +18,7 @@ export function ToolsAndTechnologiesGraph() {
 	return (
 		<div className="tools-and-technologies-graph--dark">
 			<div className="graph-h-box">
+				<div className="y-axis-label">Years Used</div>
 				<div className="y-axis">{yLabels}</div>
 				<div className="graph-lines">
 					{graphLines}
