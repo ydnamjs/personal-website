@@ -20,6 +20,12 @@ export function ToolsAndTechnologiesGraph() {
 					<div className="graph-line"></div>
 					<div className="graph-line"></div>
 					<div className="graph-line"></div>
+					<div className="x-bars">
+						<div className="x-bar" style={{height: "100%"}}></div>
+						<div className="x-bar" style={{height: "75%"}}></div>
+						<div className="x-bar" style={{height: "50%"}}></div>
+						<div className="x-bar" style={{height: "25%"}}></div>
+					</div>
 				</div>
 			</div>
 			<div className="x-axis">
