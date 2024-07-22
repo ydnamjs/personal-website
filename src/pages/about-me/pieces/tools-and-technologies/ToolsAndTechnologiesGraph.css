@@ -1,5 +1,50 @@
 .tools-and-technologies-graph--dark {
-	background-color: purple;
-	min-width: 30px;
-	min-height: 150px;
+	padding-top: 25px;
+}
+
+.graph-h-box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.y-axis {
+	min-width: 25px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0;
+}
+
+.y-axis-item {
+	flex-grow: 1;
+	text-align: right;
+}
+
+.graph-lines {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.graph-line {
+	position: relative;
+	background-color: white;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 1px;
+}
+
+.x-axis {
+	margin: 15px;
+	margin-left: 25px;
+	margin-top: -10px;
+	margin-right: 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.x-axis-item {
+	flex-grow: 1;
+	text-align: center;
 }
