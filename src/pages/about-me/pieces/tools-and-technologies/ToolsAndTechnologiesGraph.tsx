@@ -1,38 +1,54 @@
 import React from "react";
 import "./ToolsAndTechnologiesGraph.css";
 
-//const GRAPH_ERROR_MESSAGE = "ERROR: Graph does not exist";
+const MACHINE_LEARNING_ITEMS = ["Python", "PyTorch", "OpenCV"];
+const MACHINE_LEARNING_EXPERIENCE = [4, 2, 1];
+const MACHINE_LEARNING_Y_INTERVAL = 1;
+const MACHINE_LEARNING_Y_LEVELS = 5;
 
 export function ToolsAndTechnologiesGraph() {
+	const graphLines = [];
+	const yLabels = [];
+	for (let i = 0; i < MACHINE_LEARNING_Y_LEVELS; i++) {
+		graphLines.push(<div className="graph-line"></div>);
+		yLabels.push(<div className="y-axis-item">{i * MACHINE_LEARNING_Y_INTERVAL}</div>);
+	}
+	yLabels.reverse();
+
 	return (
 		<div className="tools-and-technologies-graph--dark">
 			<div className="graph-h-box">
-				<div className="y-axis">
-					<div className="y-axis-item">4</div>
-					<div className="y-axis-item">3</div>
-					<div className="y-axis-item">2</div>
-					<div className="y-axis-item">1</div>
-					<div className="y-axis-item">0</div>
-				</div>
+				<div className="y-axis">{yLabels}</div>
 				<div className="graph-lines">
-					<div className="graph-line"></div>
-					<div className="graph-line"></div>
-					<div className="graph-line"></div>
-					<div className="graph-line"></div>
-					<div className="graph-line"></div>
+					{graphLines}
 					<div className="x-bars">
-						<div className="x-bar" style={{height: "100%"}}></div>
-						<div className="x-bar" style={{height: "75%"}}></div>
-						<div className="x-bar" style={{height: "50%"}}></div>
-						<div className="x-bar" style={{height: "25%"}}></div>
+						{MACHINE_LEARNING_EXPERIENCE.map((item, index) => {
+							return (
+								<div
+									className="x-bar"
+									style={{
+										height:
+											"" +
+											(item / (MACHINE_LEARNING_Y_LEVELS - 1)) *
+												MACHINE_LEARNING_Y_INTERVAL *
+												100 +
+											"%",
+									}}
+									key={"x-axis-item" + index}
+								></div>
+							);
+						})}
 					</div>
 				</div>
 			</div>
 			<div className="x-axis">
-				<div className="x-axis-item">TypeScript</div>
-				<div className="x-axis-item">React</div>
-				<div className="x-axis-item">SQL</div>
-				<div className="x-axis-item">Flask</div>
+				{MACHINE_LEARNING_ITEMS.map((item, index) => {
+					return (
+						<div className="x-axis-item" key={"x-axis-item" + index}>
+							{item}
+						</div>
+					);
+				})}
 			</div>
 		</div>
 	);
