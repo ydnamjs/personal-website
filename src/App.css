@@ -5,3 +5,17 @@
 	max-width: 100vw;
 	min-height: 100vh;
 }
+
+.navigation-bar {
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	background-color: #2d2e2d;
+	width: max-content;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
