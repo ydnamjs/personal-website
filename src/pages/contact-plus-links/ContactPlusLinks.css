@@ -18,7 +18,8 @@
 	justify-content: center;
 }
 
-.contact-plus-links-section {
+.contact-plus-links--icon,
+.contact-plus-links--descripton {
 	margin: 5px;
 	padding: 10px;
 	border-radius: 10px;
@@ -28,7 +29,17 @@
 	max-width: 100vw;
 }
 
-.icon-section {
+.contact-plus-links--icon {
 	max-height: 125px;
 	flex-grow: 0;
+}
+
+.contact-plus-links--descripton {
+	max-width: 775px;
+}
+
+.contact-plus-links--descripton h2 {
+	margin: 0;
+	padding: 0;
+	color: #4e9f3d;
 }

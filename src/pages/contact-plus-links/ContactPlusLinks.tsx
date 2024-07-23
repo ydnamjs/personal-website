@@ -10,26 +10,34 @@ export function ContactPlusLinks() {
 	return (
 		<div className="contact-plus-links-page">
 			<div className="contact-plus-links--row">
-				<img src={emailIconWhite} className="contact-plus-links-section icon-section"></img>
-				<div className="contact-plus-links-section"></div>
+				<img src={emailIconWhite} className="contact-plus-links--icon"></img>
+				<div className="contact-plus-links--descripton">
+					<h2>Email</h2>
+				</div>
 			</div>
 			<div className="contact-plus-links--row">
-				<div className="contact-plus-links-section"></div>
-				<img
-					src={resumeIconWhite}
-					className="contact-plus-links-section icon-section"
-				></img>
+				<div className="contact-plus-links--descripton">
+					<h2>Resume / CV</h2>
+				</div>
+				<img src={resumeIconWhite} className="contact-plus-links--icon"></img>
 			</div>
 			<div className="contact-plus-links--row">
-				<img src={linkedInWhite} className="contact-plus-links-section icon-section"></img>
-				<div className="contact-plus-links-section"></div>
+				<img src={linkedInWhite} className="contact-plus-links--icon"></img>
+				<div className="contact-plus-links--descripton">
+					<h2>LinkedIn Profile</h2>
+				</div>
 			</div>
 			<div className="contact-plus-links--row">
-				<div className="contact-plus-links-section"></div>
-				<img
-					src={gitHubIconWhite}
-					className="contact-plus-links-section icon-section"
-				></img>
+				<div className="contact-plus-links--descripton">
+					<h2>GitHub Profile</h2>
+					<div>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla qui nobis
+						facere maxime nemo, cum possimus veritatis ratione dolor id adipisci!
+						Perspiciatis consequatur nobis blanditiis doloribus placeat qui esse
+						recusandae!
+					</div>
+				</div>
+				<img src={gitHubIconWhite} className="contact-plus-links--icon"></img>
 			</div>
 		</div>
 	);
