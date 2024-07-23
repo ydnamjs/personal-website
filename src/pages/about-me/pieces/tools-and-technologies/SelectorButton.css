@@ -1,0 +1,18 @@
+.selector-button {
+	min-width: 75px;
+	min-height: 50px;
+	border-radius: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color: green;
+}
+
+.selector-button--active {
+	opacity: 1;
+}
+
+.selector-button--inactive {
+	background-color: transparent;
+	border-color: white;
+	border-style: solid;
+}

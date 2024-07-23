@@ -1,5 +1,5 @@
 import React from "react";
-import "./ToolsAndTechnologiesGraph.css";
+import "./Graph.css";
 
 const MACHINE_LEARNING_ITEMS = ["Python", "PyTorch", "OpenCV"];
 const MACHINE_LEARNING_EXPERIENCE = [4, 1, 1];
