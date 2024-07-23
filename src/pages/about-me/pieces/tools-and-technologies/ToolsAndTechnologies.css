@@ -6,3 +6,7 @@
 .tools-and-technology--header {
 	display: inline-block;
 }
+
+.selector-buttons--row {
+	float: right;
+}

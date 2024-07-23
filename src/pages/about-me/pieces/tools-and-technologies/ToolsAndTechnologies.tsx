@@ -13,7 +13,7 @@ export function ToolsAndTechnologies() {
 	return (
 		<div className="about-me-section tools-and-technology-section">
 			<h2 className="tools-and-technology--header">Tools And Technologies</h2>
-			<div style={{float: "right"}}>
+			<div className="selector-buttons--row">
 				<SelectorButton
 					graphType={graphType}
 					setGraphType={setGraphType}

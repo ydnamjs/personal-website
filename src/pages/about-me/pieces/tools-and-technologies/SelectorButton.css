@@ -4,15 +4,20 @@
 	border-radius: 10px;
 	margin-left: 5px;
 	margin-right: 5px;
-	background-color: green;
+	border-color: transparent;
+	color: #a1a1aa;
+	cursor: pointer;
 }
 
 .selector-button--active {
-	opacity: 1;
+	background-color: #3f3f46;
+	color: white;
 }
 
 .selector-button--inactive {
 	background-color: transparent;
-	border-color: white;
-	border-style: solid;
+}
+
+.selector-button:hover {
+	color: white;
 }
