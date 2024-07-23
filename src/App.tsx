@@ -3,6 +3,7 @@ import "./App.css";
 import {Helmet} from "react-helmet";
 import {AboutMe} from "./pages/about-me/AboutMe";
 import {PageSelector} from "./PageSelector";
+import {ContactPlusLinks} from "./pages/contact-plus-links/ContactPlusLinks";
 
 export type PageType = "About" | "Portfolio" | "Other Interests" | "Contact + Links";
 
@@ -30,6 +31,7 @@ function App() {
 				></PageSelector>
 			</div>
 			{page === "About" && <AboutMe></AboutMe>}
+			{page === "Contact + Links" && <ContactPlusLinks></ContactPlusLinks>}
 		</div>
 	);
 }
