@@ -5,7 +5,7 @@ import {SelectorButton} from "./SelectorButton";
 import "./ToolsAndTechnologies.css";
 import "../../AboutMe.css";
 
-export type GraphType = "Web Development" | "Machine Learning" | "Game Development";
+export type GraphType = "Web Development" | "Machine Learning" | "Game Development" | "Languages";
 
 export function ToolsAndTechnologies() {
 	const [graphType, setGraphType] = useState<GraphType>("Web Development");
@@ -30,7 +30,7 @@ export function ToolsAndTechnologies() {
 					buttonType={"Game Development"}
 				></SelectorButton>
 			</div>
-			<ToolsAndTechnologiesGraph></ToolsAndTechnologiesGraph>
+			<ToolsAndTechnologiesGraph graphType={graphType}></ToolsAndTechnologiesGraph>
 		</div>
 	);
 }
