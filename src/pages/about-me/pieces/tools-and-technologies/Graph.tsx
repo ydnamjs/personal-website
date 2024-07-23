@@ -19,14 +19,14 @@ graphKey.set("Machine Learning", {
 
 graphKey.set("Game Development", {
 	items: ["Unreal Engine 4", "Godot", "Blender", "C++"],
-	experience: [2, 1, 1, 1],
+	experience: [1.99999, 1, 1, 1],
 	yInterval: 1,
 	numLevels: 5,
 });
 
 graphKey.set("Web Development", {
 	items: ["Java/Type Script", "React.js", "Relational Databases", "Document Databases"],
-	experience: [2, 2, 1, 1],
+	experience: [1.99999, 1.99999, 1, 1],
 	yInterval: 1,
 	numLevels: 5,
 });
