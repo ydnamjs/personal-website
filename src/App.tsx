@@ -13,6 +13,7 @@ function App() {
 		<div className="background">
 			<Helmet>
 				<title>Michael Snead</title>
+				<meta name="description" content="Michael Snead | Personal Website"></meta>
 			</Helmet>
 			<div className="navigation-bar">
 				<PageSelector page={page} setPage={setPage} buttonPage={"About"}></PageSelector>
