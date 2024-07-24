@@ -36,6 +36,7 @@ export function ImageCarousel({headingText}: {headingText: string}) {
 	return (
 		<div>
 			<h2
+				className="carousel--heading"
 				style={{
 					width:
 						width > 940 ? "890px"
