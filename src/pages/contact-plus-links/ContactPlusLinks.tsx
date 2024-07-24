@@ -1,29 +1,14 @@
 import React from "react";
 import "./ContactPlusLinks.css";
 
+import toast, {Toaster} from "react-hot-toast";
+
 import emailIconWhite from "../../assets/contact-plus-links/Email_Icon_White.png";
 import resumeIconWhite from "../../assets/contact-plus-links/Resume_Icon_White.png";
 import linkedInWhite from "../../assets/contact-plus-links/LinkedIn_Icon_White.png";
 import gitHubIconWhite from "../../assets/contact-plus-links/GitHub_Icon_White.png";
 
 export function ContactPlusLinks() {
-	{
-		/* 
-					<h2>
-						<a href="https://github.com/ydnamjs" target="_blank" rel="noreferrer">
-							GitHub Profile
-						</a>
-					</h2>
-					<button
-						className="copy-link-button"
-						onClick={() => {
-							navigator.clipboard.writeText("https://github.com/ydnamjs");
-						}}
-					>
-						Copy
-					</button> */
-	}
-
 	return (
 		<div className="contact-plus-links-page">
 			<div className="contact-plus-links--row">
@@ -43,10 +28,20 @@ export function ContactPlusLinks() {
 						className="copy-email-button"
 						onClick={() => {
 							navigator.clipboard.writeText("hireMichaelSnead@gmail.com");
+							toast("Email Address Copied to Clipboard", {
+								duration: 2000,
+								id: "email address copy",
+								style: {
+									borderRadius: "10px",
+									background: "#333",
+									color: "#fff",
+								},
+							});
 						}}
 					>
 						Copy Email Address
 					</button>
+					<Toaster position="bottom-center" reverseOrder={false} />
 				</div>
 				<a
 					href="https://drive.google.com/file/d/1wlqSZAsHSnRj8TFKZZoO0wAmbaV-I8mI/view?usp=sharing"
