@@ -8,6 +8,7 @@ import rightArrow from "../../assets/carousel/Right_Arrow_Black.png";
 import albumCargo from "../../assets/other-interests/favorite-albums/Cargo.jpg";
 import albumNothingHappens from "../../assets/other-interests/favorite-albums/NothingHappens.jpg";
 import albumOnlyALad from "../../assets/other-interests/favorite-albums/OnlyALad.jpg";
+import {CarouselCard} from "./CarouselCard";
 // import albumOpenYourEyes from "../../assets/other-interests/favorite-albums/Cargo.jpg";
 // import albumRandomAccessMemories from "../../assets/other-interests/favorite-albums/Cargo.jpg";
 // import albumRemainInLight from "../../assets/other-interests/favorite-albums/Cargo.jpg";
@@ -33,14 +34,24 @@ export function ImageCarousel() {
 	}, []);
 
 	return (
-		<div className="carousel" ref={elementRef}>
-			<div className="carousel-row">
+		<div>
+			<div className="carousel" ref={elementRef}>
 				<button>
 					<img src={leftArrow} />
 				</button>
-				<img className="carousel-image" src={albumCargo} />
-				{width > 600 && <img className="carousel-image" src={albumNothingHappens} />}
-				{width > 900 && <img className="carousel-image" src={albumOnlyALad} />}
+				<CarouselCard src={albumCargo} label={'"Cargo" by Men At Work'}></CarouselCard>
+				{width > 660 && (
+					<CarouselCard
+						src={albumNothingHappens}
+						label={'"Nothing Happens" by Wallows'}
+					></CarouselCard>
+				)}
+				{width > 940 && (
+					<CarouselCard
+						src={albumOnlyALad}
+						label={'"Only A Lad" by Oingo Boingo'}
+					></CarouselCard>
+				)}
 				<button>
 					<img src={rightArrow} />
 				</button>

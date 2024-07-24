@@ -1,16 +1,10 @@
 .carousel {
 	width: 100%;
-}
-
-.carousel-row {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-
-.carousel-image {
-	max-width: 250px;
+	gap: 15px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -22,7 +16,7 @@
 	border-color: transparent;
 	border-style: solid;
 	border-radius: 10px;
-	margin: 5px;
+	margin: 0;
 }
 
 .carousel button:hover {
