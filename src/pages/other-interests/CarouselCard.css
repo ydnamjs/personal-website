@@ -1,8 +1,9 @@
 .carousel-card {
-	width: max-content;
+	width: 250px;
 }
 
 .carousel-card--image {
+	width: 250px;
 	max-width: 250px;
 	margin-left: auto;
 	margin-right: auto;

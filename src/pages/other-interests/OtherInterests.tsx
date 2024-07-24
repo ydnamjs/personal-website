@@ -2,6 +2,7 @@ import React from "react";
 import "./OtherInterests.css";
 import {ImageCarousel} from "./ImageCarousel";
 import {AlbumCard} from "./AlbumCard";
+import {GameCard} from "./GameCard";
 
 import albumCargo from "../../assets/other-interests/favorite-albums/Cargo.jpg";
 import albumNothingHappens from "../../assets/other-interests/favorite-albums/NothingHappens.jpg";
@@ -44,11 +45,27 @@ const ALBUM_CARDS = [
 	/>,
 ];
 
+import gameTeamFortress2 from "../../assets/other-interests/favorite-games/TeamFortress2.jpg";
+import gameTerraria from "../../assets/other-interests/favorite-games/Terraria.jpg";
+import gameFuri from "../../assets/other-interests/favorite-games/Furi.jpg";
+import gamePayday2 from "../../assets/other-interests/favorite-games/PayDay2.jpg";
+import gameZombies from "../../assets/other-interests/favorite-games/Zombies.jpg";
+import gameBloons from "../../assets/other-interests/favorite-games/Bloons.jpg";
+
+const GAME_CARDS = [
+	<GameCard src={gameTeamFortress2} title={"Team Fortress 2"} key={"game-card-1"}></GameCard>,
+	<GameCard src={gameTerraria} title={"Terraria"} key={"game-card-2"}></GameCard>,
+	<GameCard src={gameFuri} title={"Furi"} key={"game-card-3"}></GameCard>,
+	<GameCard src={gamePayday2} title={"PAYDAY 2"} key={"game-card-4"}></GameCard>,
+	<GameCard src={gameZombies} title={"Call Of Duty Zombies"} key={"game-card-5"}></GameCard>,
+	<GameCard src={gameBloons} title={"Bloons TD 6"} key={"game-card-6"}></GameCard>,
+];
+
 export function OtherInterests() {
 	return (
 		<div className="other-interests-page">
 			<ImageCarousel headingText="Favorite Albums" items={ALBUM_CARDS}></ImageCarousel>
-			<ImageCarousel headingText="Favorite Video Games" items={ALBUM_CARDS}></ImageCarousel>
+			<ImageCarousel headingText="Favorite Video Games" items={GAME_CARDS}></ImageCarousel>
 		</div>
 	);
 }
