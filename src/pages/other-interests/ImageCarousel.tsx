@@ -13,7 +13,7 @@ import {CarouselCard} from "./CarouselCard";
 // import albumRandomAccessMemories from "../../assets/other-interests/favorite-albums/Cargo.jpg";
 // import albumRemainInLight from "../../assets/other-interests/favorite-albums/Cargo.jpg";
 
-export function ImageCarousel() {
+export function ImageCarousel({headingText}: {headingText: string}) {
 	const elementRef = useRef<HTMLDivElement>(null);
 	const [width, setWidth] = useState(0);
 
@@ -35,6 +35,16 @@ export function ImageCarousel() {
 
 	return (
 		<div>
+			<h2
+				style={{
+					width:
+						width > 940 ? "890px"
+						: width > 660 ? "630px"
+						: "360px",
+				}}
+			>
+				{headingText}
+			</h2>
 			<div className="carousel" ref={elementRef}>
 				<button>
 					<img src={leftArrow} />
