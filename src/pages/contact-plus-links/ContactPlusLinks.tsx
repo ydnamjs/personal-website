@@ -13,17 +13,6 @@ export function ContactPlusLinks() {
 		<div className="contact-plus-links-page">
 			<div className="contact-plus-links--row">
 				<div>
-					<a
-						className="contact-plus-links--section"
-						style={{height: "190px"}}
-						href="mailto:hireMichaelSnead@gmail.com"
-					>
-						<img src={emailIconWhite} className="contact-plus-links--icon"></img>
-						<h2 style={{margin: "5px"}}>Business Email</h2>
-						<br />
-						<span style={{textAlign: "center"}}>hireMichaelSnead@gmail.com</span>
-						<br />
-					</a>
 					<button
 						className="copy-email-button"
 						onClick={() => {
@@ -41,6 +30,18 @@ export function ContactPlusLinks() {
 					>
 						Copy Email Address
 					</button>
+					<a
+						className="contact-plus-links--section"
+						style={{height: "190px"}}
+						href="mailto:hireMichaelSnead@gmail.com"
+					>
+						<img src={emailIconWhite} className="contact-plus-links--icon"></img>
+						<h2 style={{margin: "5px"}}>Business Email</h2>
+						<br />
+						<span style={{textAlign: "center"}}>hireMichaelSnead@gmail.com</span>
+						<br />
+					</a>
+
 					<Toaster position="bottom-center" reverseOrder={false} />
 				</div>
 				<a
