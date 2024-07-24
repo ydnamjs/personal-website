@@ -1,0 +1,30 @@
+.carousel {
+	width: 100%;
+}
+
+.carousel-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.carousel-image {
+	max-width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.carousel button {
+	width: 50px;
+	cursor: pointer;
+	background-color: #2d2e2d;
+	border-color: transparent;
+	border-style: solid;
+	border-radius: 10px;
+	margin: 5px;
+}
+
+.carousel button:hover {
+	background-color: #3f3f46;
+}
