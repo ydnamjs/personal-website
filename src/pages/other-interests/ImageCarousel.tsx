@@ -70,7 +70,7 @@ export function ImageCarousel({headingText}: {headingText: string}) {
 			<div className="carousel" ref={elementRef}>
 				<button
 					onClick={() => {
-						setIndex((index - 1) % albums.length);
+						setIndex((index - 1 + albums.length) % albums.length);
 					}}
 				>
 					<img src={leftArrow} />
