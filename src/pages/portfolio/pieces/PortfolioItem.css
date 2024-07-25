@@ -1,6 +1,13 @@
 .portfolio-item {
-	width: 90%;
-	margin-top: 5px;
+	margin: 5px;
+	display: flex;
+	gap: 10px;
+}
+
+.portfolio-item--info {
+	flex-grow: 1;
+	word-break: normal;
+	word-wrap: normal;
 }
 
 .portfolio-item--heading {
@@ -22,4 +29,25 @@
 	margin: 5px;
 	margin-left: 0px;
 	margin-right: 10px;
+}
+
+.portfolio-item--links {
+	min-width: fit-content;
+	width: 175px;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	gap: 10px;
+}
+
+.portfolio-item--links p {
+	margin: 0;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #2d2e2d;
+	text-align: center;
+	justify-content: center;
+	flex-grow: 1;
 }
