@@ -1,8 +1,10 @@
 import React, {useState} from "react";
 import "./Portfolio.css";
-import {PortfolioButton} from "./pieces/PortfolioButton";
 
 export type Portfolio = "Web Dev" | "Machine Learning" | "Games";
+
+import {PortfolioButton} from "./pieces/PortfolioButton";
+import {PortfolioItem} from "./pieces/PortfolioItem";
 
 export function Portfolio() {
 	const [activePortfolio, setActivePortfolio] = useState<Portfolio>("Web Dev");
@@ -26,6 +28,7 @@ export function Portfolio() {
 					buttonPortfolio={"Games"}
 				></PortfolioButton>
 			</div>
+			<PortfolioItem></PortfolioItem>
 		</div>
 	);
 }

@@ -1,0 +1,25 @@
+.portfolio-item {
+	width: 90%;
+	margin-top: 5px;
+}
+
+.portfolio-item--heading {
+	color: #4e9f3d;
+	margin-top: 0;
+}
+
+.tech-used {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.tech-used p {
+	padding: 5px;
+	border-radius: 10px;
+	background-color: #3f3f46;
+	color: #4e9f3d;
+	margin: 5px;
+	margin-left: 0px;
+	margin-right: 10px;
+}
