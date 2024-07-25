@@ -1,0 +1,22 @@
+.portfolio-button--active,
+.portfolio-button--inactive {
+	background-color: transparent;
+	border-color: transparent;
+	border-radius: 5px;
+	color: #a1a1aa;
+	cursor: pointer;
+}
+
+.portfolio-button--active {
+	background-color: #3f3f46;
+	color: white;
+}
+
+.portfolio-button--inactive {
+	background-color: transparent;
+}
+
+.portfolio-button--active:hover,
+.portfolio-button--inactive:hover {
+	color: white;
+}
