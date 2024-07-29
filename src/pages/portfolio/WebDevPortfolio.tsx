@@ -101,11 +101,8 @@ export function WebDevPortfolio() {
 				title={"Corkboard Website"}
 				description={
 					<p>
-						Basic &quot;drag and drop&quot; web application that can be used to create
-						note cards on a corkboard Lorem ipsum dolor sit, amet consectetur
-						adipisicing elit. Veniam facilis esse delectus beatae laborum harum
-						quibusdam illo. Harum illum adrem fuga omnis assumenda, velit optio voluptas
-						repudiandae aspernatur doloribus.
+						Basic &quot;drag and drop&quot; web application that can used to create note
+						cards on a virtual corkboard.
 					</p>
 				}
 				techUsed={[
