@@ -56,4 +56,12 @@
 	word-break: normal;
 	text-align: center;
 	background-color: #2d2e2d;
+	cursor: pointer;
+	color: #d8e9a8;
+	text-decoration: none;
+}
+
+.portfolio-item--links-item:hover {
+	background-color: #3f3f46;
+	text-decoration: underline;
 }
