@@ -37,6 +37,13 @@
 	line-height: 15px;
 }
 
+.link-slide-left {
+	animation: slideleft 0.5s forwards;
+}
+.link-slide-right {
+	animation: slideright 0.5s forwards;
+}
+
 .contact-plus-links--section:hover {
 	background-color: #3f3f46;
 }

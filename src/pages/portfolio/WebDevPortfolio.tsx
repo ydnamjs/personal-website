@@ -60,6 +60,7 @@ export function WebDevPortfolio() {
 						Source Code
 					</a>,
 				]}
+				isAnimationLeft={true}
 			/>
 			<PortfolioItem
 				title={"Corkboard Website"}
@@ -102,6 +103,7 @@ export function WebDevPortfolio() {
 						Source Code
 					</a>,
 				]}
+				isAnimationLeft={false}
 			/>
 		</>
 	);

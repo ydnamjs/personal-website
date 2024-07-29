@@ -64,8 +64,16 @@ const GAME_CARDS = [
 export function OtherInterests() {
 	return (
 		<div className="other-interests-page">
-			<ImageCarousel headingText="Favorite Albums" items={ALBUM_CARDS}></ImageCarousel>
-			<ImageCarousel headingText="Favorite Video Games" items={GAME_CARDS}></ImageCarousel>
+			<ImageCarousel
+				headingText="Favorite Albums"
+				items={ALBUM_CARDS}
+				isSlideLeft={true}
+			></ImageCarousel>
+			<ImageCarousel
+				headingText="Favorite Video Games"
+				items={GAME_CARDS}
+				isSlideLeft={false}
+			></ImageCarousel>
 		</div>
 	);
 }

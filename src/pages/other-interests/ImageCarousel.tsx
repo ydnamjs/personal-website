@@ -5,7 +5,15 @@ import "./ImageCarousel.css";
 import leftArrow from "../../assets/carousel/Left_Arrow_Black.png";
 import rightArrow from "../../assets/carousel/Right_Arrow_Black.png";
 
-export function ImageCarousel({headingText, items}: {headingText: string; items: ReactElement[]}) {
+export function ImageCarousel({
+	headingText,
+	items,
+	isSlideLeft,
+}: {
+	headingText: string;
+	items: ReactElement[];
+	isSlideLeft: boolean;
+}) {
 	const elementRef = useRef<HTMLDivElement>(null);
 	const [width, setWidth] = useState(0);
 
@@ -28,7 +36,7 @@ export function ImageCarousel({headingText, items}: {headingText: string; items:
 	const [index, setIndex] = useState(0);
 
 	return (
-		<div>
+		<div className={isSlideLeft ? "carousel-slide-left" : "carousel-slide-right"}>
 			<h2
 				className="carousel--heading"
 				style={{

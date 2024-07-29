@@ -11,6 +11,13 @@
 	margin-bottom: 0;
 }
 
+.carousel-slide-left {
+	animation: slideleft 0.5s forwards;
+}
+.carousel-slide-right {
+	animation: slideright 0.5s forwards;
+}
+
 .carousel button {
 	width: 50px;
 	cursor: pointer;

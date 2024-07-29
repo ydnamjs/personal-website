@@ -1,19 +1,16 @@
-@keyframes slide {
-	from {
-		transform: translateX(20%);
-		opacity: 0;
-	}
-	to {
-		transform: translateX(0%);
-		opacity: 1;
-	}
-}
-
-.portfolio-item {
+.portfolio-item-left,
+.portfolio-item-right {
 	margin: 5px;
 	display: flex;
 	gap: 10px;
-	animation: slide 1s forwards;
+}
+
+.portfolio-item-right {
+	animation: slideright 0.5s forwards;
+}
+
+.portfolio-item-left {
+	animation: slideleft 0.5s forwards;
 }
 
 .portfolio-item--info {

@@ -33,6 +33,7 @@ export function GamesPortfolio() {
 						Source Code
 					</a>,
 				]}
+				isAnimationLeft={true}
 			></PortfolioItem>
 		</>
 	);

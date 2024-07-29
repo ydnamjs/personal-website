@@ -1,4 +1,5 @@
 .picture-section {
 	max-height: 200px;
 	flex-grow: 0;
+	animation: slideright 0.5s forwards;
 }

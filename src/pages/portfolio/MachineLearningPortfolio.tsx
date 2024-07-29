@@ -24,6 +24,7 @@ export function MachineLearningPortfolio() {
 						Source Code
 					</a>,
 				]}
+				isAnimationLeft={true}
 			/>
 		</>
 	);
