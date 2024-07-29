@@ -4,21 +4,21 @@ import {ImageCarousel} from "./ImageCarousel";
 import {AlbumCard} from "./AlbumCard";
 import {GameCard} from "./GameCard";
 
-import albumCargo from "../../assets/other-interests/favorite-albums/Cargo.jpg";
 import albumNothingHappens from "../../assets/other-interests/favorite-albums/NothingHappens.jpg";
+import albumCargo from "../../assets/other-interests/favorite-albums/Cargo.jpg";
 import albumOnlyALad from "../../assets/other-interests/favorite-albums/OnlyALad.jpg";
 import albumOpenYourEyes from "../../assets/other-interests/favorite-albums/OpenYourEyes.jpg";
 import albumRandomAccessMemories from "../../assets/other-interests/favorite-albums/RandomAccessMemories.jpg";
 import albumRemainInLight from "../../assets/other-interests/favorite-albums/RemainInLight.jpg";
 
 const ALBUM_CARDS = [
-	<AlbumCard src={albumCargo} title={"Cargo"} band={"Men At Work"} key={"album-card-1"} />,
 	<AlbumCard
 		src={albumNothingHappens}
 		title={"Nothing Happens"}
 		band={"Wallows"}
 		key={"album-card-2"}
 	/>,
+	<AlbumCard src={albumCargo} title={"Cargo"} band={"Men At Work"} key={"album-card-1"} />,
 	<AlbumCard
 		src={albumOnlyALad}
 		title={"Only A Lad"}
