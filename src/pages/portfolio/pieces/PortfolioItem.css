@@ -42,9 +42,10 @@
 	gap: 10px;
 }
 
-.portfolio-item--links p {
+.portfolio-item--links-item {
 	margin: 0;
-	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	border-radius: 10px;
 	background-color: #2d2e2d;
 	text-align: center;

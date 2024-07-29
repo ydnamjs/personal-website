@@ -9,7 +9,9 @@ export function PortfolioItem() {
 				<h2 className="portfolio-item--heading">Corkboard Website</h2>
 				<p>
 					Basic &quot;drag and drop&quot; web application that can be used to create note
-					cards on a corkboard
+					cards on a corkboard Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+					Veniam facilis esse delectus beatae laborum harum quibusdam illo. Harum illum ad
+					rem fuga omnis assumenda, velit optio voluptas repudiandae aspernatur doloribus.
 				</p>
 				<div className="tech-used">
 					<p>React</p>
@@ -22,9 +24,15 @@ export function PortfolioItem() {
 				</div>
 			</div>
 			<div className="portfolio-item--links">
-				<p>Live Deployment</p>
-				<p>Source Code</p>
-				<p>Images</p>
+				<div className="portfolio-item--links-item">
+					<p>Live Deployment</p>
+				</div>
+				<div className="portfolio-item--links-item">
+					<p>Live Deployment</p>
+				</div>
+				<div className="portfolio-item--links-item">
+					<p>Live Deployment</p>
+				</div>
 			</div>
 		</div>
 	);
