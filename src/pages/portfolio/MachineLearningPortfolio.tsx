@@ -10,8 +10,7 @@ export function MachineLearningPortfolio() {
 					<>
 						<p>
 							Computer Vision model for segmententing and classifying polyhedral dice
-							for use to automatically sum the total for use in table top roleplaying
-							games.
+							for to create a dice tower which sums up all dice rolled at the bottom.
 						</p>
 						<p>Work In Progress!</p>
 					</>
@@ -32,7 +31,7 @@ export function MachineLearningPortfolio() {
 				description={
 					<p>
 						Python implementation of the random forest classification algorithm. Created
-						to better understand the project
+						to better understand the algorithm.
 					</p>
 				}
 				techUsed={["Python", "Git", "GitHub"]}

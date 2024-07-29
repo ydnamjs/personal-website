@@ -9,7 +9,7 @@ export function GamesPortfolio() {
 				description={
 					<p>
 						A puzzle game designed to teach fundamental algorithms and looping to
-						elementary and middle schoolers.
+						elementary and middle school students.
 					</p>
 				}
 				techUsed={["TypeScript", "Phazer 3", "Node Package Manager", "Git", "GitHub"]}

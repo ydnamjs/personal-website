@@ -44,9 +44,9 @@ export function WebDevPortfolio() {
 				description={
 					<>
 						<p>
-							A react web app that simulates a 3D sound enviornment that reacts to
-							rotations in real time using gyro orientations recieved from a raspberry
-							pi. Intended to reduce overstimulation in noisy environments for
+							A web app that simulates a 3D sound enviornment that reacts to rotations
+							in real time using gyro orientations recieved from a raspberry pi.
+							Intended to reduce overstimulation in noisy environments for
 							neurodivergent people.
 						</p>
 						<p>
