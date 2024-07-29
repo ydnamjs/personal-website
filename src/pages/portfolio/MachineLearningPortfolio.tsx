@@ -17,14 +17,15 @@ export function MachineLearningPortfolio() {
 					</>
 				}
 				techUsed={[
-					"Python, Pytorch",
+					"Python",
+					"Pytorch",
 					"OpenCV",
 					"Pyinvoke",
 					"Blender",
 					"Blender Python API",
 				]}
 				linkButtons={[]}
-				isAnimationLeft={false}
+				isAnimationLeft={true}
 			/>
 			<PortfolioItem
 				title={"Python Random Forest"}
