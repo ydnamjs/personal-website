@@ -1,5 +1,4 @@
 import React, {ReactElement, useEffect, useRef, useState} from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./ImageCarousel.css";
 
 import leftArrow from "../../assets/carousel/Left_Arrow_Black.png";
@@ -50,6 +49,7 @@ export function ImageCarousel({
 			</h2>
 			<div className="carousel" ref={elementRef}>
 				<button
+					className="carousel-button"
 					onClick={() => {
 						setIndex((index - 1 + items.length) % items.length);
 					}}
@@ -60,6 +60,7 @@ export function ImageCarousel({
 				{width > 660 && <div>{items[(index + 1) % items.length]}</div>}
 				{width > 940 && <div>{items[(index + 2) % items.length]}</div>}
 				<button
+					className="carousel-button"
 					onClick={() => {
 						setIndex((index + 1) % items.length);
 					}}
