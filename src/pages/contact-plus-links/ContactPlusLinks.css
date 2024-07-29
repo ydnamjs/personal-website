@@ -1,0 +1,87 @@
+.contact-plus-links-page {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	word-break: break-all;
+	color: #d8e9a8;
+
+	width: 100%;
+	max-width: 960px;
+}
+
+.contact-plus-links--row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contact-plus-links--section {
+	margin: 5px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #2d2e2d;
+	width: 250px;
+	height: 250px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-decoration: none;
+
+	cursor: pointer;
+
+	color: #4e9f3d;
+	line-height: 15px;
+}
+
+.link-slide-left {
+	animation: slideleft 0.5s forwards;
+}
+.link-slide-right {
+	animation: slideright 0.5s forwards;
+}
+
+.contact-plus-links--section:hover {
+	background-color: #3f3f46;
+}
+
+.contact-plus-links--section h2 {
+	margin: 0;
+	margin-top: 15px;
+	padding: 0;
+	color: #4e9f3d;
+	text-align: center;
+}
+
+.contact-plus-links--section:hover h2 {
+	text-decoration: underline;
+}
+
+.contact-plus-links--icon {
+	max-height: 150px;
+	max-width: 150px;
+	flex-grow: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.copy-email-button {
+	cursor: pointer;
+	width: 270px;
+	margin: 5px;
+	background-color: #2d2e2d;
+	border-color: transparent;
+	border-style: solid;
+	border-radius: 10px;
+	color: white;
+	color: #4e9f3d;
+	font-size: large;
+	height: 50px;
+}
+
+.copy-email-button:hover {
+	background-color: #3f3f46;
+}

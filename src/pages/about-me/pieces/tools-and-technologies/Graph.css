@@ -1,0 +1,101 @@
+.tools-and-technologies-graph--dark {
+	padding-top: 25px;
+	clear: both;
+}
+
+.graph-h-box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.y-axis-label {
+	text-align: center;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	min-width: 20px;
+}
+
+.y-axis {
+	min-width: 25px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0;
+}
+
+.y-axis-item {
+	text-align: right;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.graph-lines {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-left: 5px;
+}
+
+.graph-line {
+	background-color: white;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 1px;
+}
+
+.x-axis {
+	margin: 15px;
+	margin-left: 50px;
+	margin-top: -10px;
+	margin-right: 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.x-axis-item {
+	flex-grow: 0;
+	flex-basis: 25%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	word-break: normal;
+}
+
+.x-bars {
+	position: absolute;
+	width: 100%;
+
+	margin: 0;
+	padding: 0;
+	bottom: 9px;
+	top: 9px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+@keyframes grow {
+	from {
+		transform: scaleY(0);
+		transform-origin: bottom;
+	}
+	to {
+		transform: scaleY(1);
+		transform-origin: bottom;
+	}
+}
+
+.x-bar {
+	background-color: #d8e9a8;
+	min-width: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	bottom: 0;
+	justify-content: center;
+	animation: grow 0.6s ease-out forwards;
+}

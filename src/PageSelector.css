@@ -1,0 +1,20 @@
+.page-selector {
+	background-color: transparent;
+	border-color: transparent;
+	border-radius: 5px;
+	color: #a1a1aa;
+	cursor: pointer;
+}
+
+.page-selector--active {
+	background-color: #3f3f46;
+	color: white;
+}
+
+.page-selector--inactive {
+	background-color: transparent;
+}
+
+.page-selector:hover {
+	color: white;
+}

@@ -1,0 +1,6 @@
+.education-section {
+	line-height: 15px;
+	text-align: left;
+	padding: 25px;
+	animation: slideleft 0.5s forwards;
+}

@@ -1,47 +1,41 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import "./App.css";
-import {MainPanel} from "./main-panel/MainPanel";
-import {AboutMe} from "./about-me/AboutMe";
 import {Helmet} from "react-helmet";
+import {AboutMe} from "./pages/about-me/AboutMe";
+import {PageSelector} from "./PageSelector";
+import {ContactPlusLinks} from "./pages/contact-plus-links/ContactPlusLinks";
+import {OtherInterests} from "./pages/other-interests/OtherInterests";
+import {Portfolio} from "./pages/portfolio/Portfolio";
 
-let scriptAttached = false;
+export type PageType = "About" | "Portfolio" | "Other Interests" | "Contact + Links";
 
 function App() {
-	const [motionEnabled, setMotionEnabled] = useState(true);
-
-	useEffect(() => {
-		if (!scriptAttached) {
-			scriptAttached = true;
-			const script = document.createElement("script");
-			script.src = process.env.PUBLIC_URL + "/background.js";
-			script.async = true;
-			document.body.appendChild(script);
-			return () => {
-				script.remove();
-			};
-		}
-	}, []);
+	const [page, setPage] = useState<PageType>("About");
 
 	return (
-		<div className="container">
+		<div className="background">
 			<Helmet>
 				<title>Michael Snead</title>
+				<meta name="description" content="Michael Snead | Personal Website"></meta>
 			</Helmet>
-			<MainPanel>
-				<AboutMe></AboutMe>
-			</MainPanel>
-			{motionEnabled && <canvas id="background" />}
-			{!motionEnabled && <div id="background" />}
-			{
-				<button
-					id="toggle-motion-button"
-					onClick={() => {
-						setMotionEnabled(!motionEnabled);
-					}}
-				>
-					{motionEnabled ? "Disable Motion" : "Enable Motion"}
-				</button>
-			}
+			<div className="navigation-bar">
+				<PageSelector page={page} setPage={setPage} buttonPage={"About"}></PageSelector>
+				<PageSelector page={page} setPage={setPage} buttonPage={"Portfolio"}></PageSelector>
+				<PageSelector
+					page={page}
+					setPage={setPage}
+					buttonPage={"Other Interests"}
+				></PageSelector>
+				<PageSelector
+					page={page}
+					setPage={setPage}
+					buttonPage={"Contact + Links"}
+				></PageSelector>
+			</div>
+			{page === "About" && <AboutMe></AboutMe>}
+			{page === "Portfolio" && <Portfolio></Portfolio>}
+			{page === "Other Interests" && <OtherInterests></OtherInterests>}
+			{page === "Contact + Links" && <ContactPlusLinks></ContactPlusLinks>}
 		</div>
 	);
 }

@@ -1,0 +1,23 @@
+.selector-button {
+	min-width: 75px;
+	min-height: 50px;
+	border-radius: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-color: transparent;
+	color: #a1a1aa;
+	cursor: pointer;
+}
+
+.selector-button--active {
+	background-color: #3f3f46;
+	color: white;
+}
+
+.selector-button--inactive {
+	background-color: transparent;
+}
+
+.selector-button:hover {
+	color: white;
+}

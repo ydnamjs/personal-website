@@ -1,0 +1,76 @@
+.portfolio-item-left,
+.portfolio-item-right {
+	margin: 5px;
+	display: flex;
+	gap: 10px;
+}
+
+.portfolio-item-right {
+	animation: slideright 0.5s forwards;
+}
+
+.portfolio-item-left {
+	animation: slideleft 0.5s forwards;
+}
+
+.portfolio-item--info {
+	flex-grow: 1;
+	word-break: normal;
+	word-wrap: normal;
+}
+
+.portfolio-item--heading {
+	color: #4e9f3d;
+	margin-top: 0;
+}
+
+.tech-used {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.tech-used p {
+	padding: 5px;
+	border-radius: 10px;
+	background-color: #3f3f46;
+	color: #4e9f3d;
+	margin: 5px;
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+.portfolio-item--links {
+	min-width: fit-content;
+	width: 175px;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	gap: 10px;
+}
+
+.portfolio-item--links-item {
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	flex-grow: 1;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 150px;
+	max-width: 100vw;
+	word-break: normal;
+	text-align: center;
+	background-color: #2d2e2d;
+	cursor: pointer;
+	color: #d8e9a8;
+	text-decoration: none;
+}
+
+.portfolio-item--links-item:hover {
+	background-color: #3f3f46;
+	text-decoration: underline;
+}
