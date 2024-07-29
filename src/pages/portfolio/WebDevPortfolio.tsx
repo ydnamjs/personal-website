@@ -5,6 +5,41 @@ export function WebDevPortfolio() {
 	return (
 		<>
 			<PortfolioItem
+				title="Personal Website"
+				description={
+					<>
+						<p>
+							A website that showcases who I am, what I&apos;ve done and how to reach
+							me along with whatever else I feel like sharing.
+						</p>
+						<p>Fun fact: You&apos;re here now!</p>
+					</>
+				}
+				techUsed={[
+					"React",
+					"Typescript",
+					"HTML",
+					"CSS",
+					"Git",
+					"GitHub",
+					"Node Package Manager",
+					"ESLint",
+					"Husky",
+				]}
+				linkButtons={[
+					<a
+						className="portfolio-item--links-item"
+						key={"sound-ificator-inator-link-1"}
+						href="https://github.com/ydnamjs/personal-website"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Source Code
+					</a>,
+				]}
+				isAnimationLeft={true}
+			/>
+			<PortfolioItem
 				title={"Sound-ificator-inator"}
 				description={
 					<>
@@ -60,7 +95,7 @@ export function WebDevPortfolio() {
 						Source Code
 					</a>,
 				]}
-				isAnimationLeft={true}
+				isAnimationLeft={false}
 			/>
 			<PortfolioItem
 				title={"Corkboard Website"}
@@ -103,7 +138,7 @@ export function WebDevPortfolio() {
 						Source Code
 					</a>,
 				]}
-				isAnimationLeft={false}
+				isAnimationLeft={true}
 			/>
 		</>
 	);
