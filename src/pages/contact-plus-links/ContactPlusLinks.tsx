@@ -45,7 +45,7 @@ export function ContactPlusLinks() {
 					<Toaster position="bottom-center" reverseOrder={false} />
 				</div>
 				<a
-					href="https://drive.google.com/file/d/1wlqSZAsHSnRj8TFKZZoO0wAmbaV-I8mI/view?usp=sharing"
+					href="https://drive.google.com/file/d/16zBNp_kYQIE9zUeEDwG3wGSR7STGTtmY/view?usp=sharing"
 					target="_blank"
 					rel="noreferrer"
 					className="contact-plus-links--section link-slide-left"
