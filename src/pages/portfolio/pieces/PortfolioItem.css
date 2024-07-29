@@ -47,8 +47,9 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
-	background-color: #2d2e2d;
-	text-align: center;
-	justify-content: center;
 	flex-grow: 1;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	background-color: #2d2e2d;
 }
