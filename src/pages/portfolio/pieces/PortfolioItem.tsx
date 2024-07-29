@@ -26,7 +26,7 @@ export function PortfolioItem({
 					})}
 				</div>
 			</div>
-			<div className="portfolio-item--links">{linkButtons}</div>
+			{linkButtons.length > 0 && <div className="portfolio-item--links">{linkButtons}</div>}
 		</div>
 	);
 }

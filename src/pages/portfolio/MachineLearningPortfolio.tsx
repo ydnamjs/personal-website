@@ -5,6 +5,28 @@ export function MachineLearningPortfolio() {
 	return (
 		<>
 			<PortfolioItem
+				title={"Automatic Dice Counter"}
+				description={
+					<>
+						<p>
+							Computer Vision model for segmententing and classifying polyhedral dice
+							for use to automatically sum the total for use in table top roleplaying
+							games.
+						</p>
+						<p>Work In Progress!</p>
+					</>
+				}
+				techUsed={[
+					"Python, Pytorch",
+					"OpenCV",
+					"Pyinvoke",
+					"Blender",
+					"Blender Python API",
+				]}
+				linkButtons={[]}
+				isAnimationLeft={false}
+			/>
+			<PortfolioItem
 				title={"Python Random Forest"}
 				description={
 					<p>
@@ -24,7 +46,7 @@ export function MachineLearningPortfolio() {
 						Source Code
 					</a>,
 				]}
-				isAnimationLeft={true}
+				isAnimationLeft={false}
 			/>
 		</>
 	);
