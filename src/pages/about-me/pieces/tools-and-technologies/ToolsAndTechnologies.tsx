@@ -11,7 +11,7 @@ export function ToolsAndTechnologies() {
 	const [graphType, setGraphType] = useState<GraphType>("Web Development");
 
 	return (
-		<div className="about-me-section tools-and-technology-section">
+		<div className="panel about-me-section tools-and-technology-section">
 			<h2 className="tools-and-technology--header">Tools And Technologies</h2>
 			<div className="selector-buttons--row">
 				<SelectorButton

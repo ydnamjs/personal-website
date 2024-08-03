@@ -7,11 +7,9 @@
 
 .about-me-section {
 	animation: slidedown 0.5s forwards;
+	text-align: center;
 	margin: 5px;
 	padding: 10px;
-	border-radius: 10px;
-	background-color: #2d2e2d;
-	text-align: center;
 	flex-grow: 1;
 	max-width: 100vw;
 }

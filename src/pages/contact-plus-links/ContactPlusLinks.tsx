@@ -32,7 +32,7 @@ export function ContactPlusLinks() {
 						Copy Email Address
 					</button>
 					<a
-						className="contact-plus-links--section link-slide-right"
+						className="panel contact-plus-links--section link-slide-right"
 						style={{height: "190px"}}
 						href="mailto:hireMichaelSnead@gmail.com"
 					>
@@ -49,7 +49,7 @@ export function ContactPlusLinks() {
 					href="https://drive.google.com/file/d/16zBNp_kYQIE9zUeEDwG3wGSR7STGTtmY/view?usp=sharing"
 					target="_blank"
 					rel="noreferrer"
-					className="contact-plus-links--section link-slide-left"
+					className="panel contact-plus-links--section link-slide-left"
 				>
 					<img src={resumeIconWhite} className="contact-plus-links--icon"></img>
 					<h2>Resume / CV</h2>
@@ -60,7 +60,7 @@ export function ContactPlusLinks() {
 					href="https://www.linkedin.com/in/michael-snead/"
 					target="_blank"
 					rel="noreferrer"
-					className="contact-plus-links--section link-slide-right"
+					className="panel contact-plus-links--section link-slide-right"
 				>
 					<img src={linkedInWhite} className="contact-plus-links--icon"></img>
 					<h2>LinkedIn Profile</h2>
@@ -69,7 +69,7 @@ export function ContactPlusLinks() {
 					href="https://www.github.com/ydnamjs"
 					target="_blank"
 					rel="noreferrer"
-					className="contact-plus-links--section link-slide-left"
+					className="panel contact-plus-links--section link-slide-left"
 				>
 					<img src={gitHubIconWhite} className="contact-plus-links--icon"></img>
 					<h2>GitHub Profile</h2>

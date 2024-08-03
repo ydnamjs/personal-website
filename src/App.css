@@ -36,6 +36,11 @@
 	max-width: 960px;
 }
 
+.panel {
+	border-radius: 10px;
+	background-color: #2d2e2d;
+}
+
 .app h1,
 .app h2 {
 	color: #4e9f3d;

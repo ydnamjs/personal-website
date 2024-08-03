@@ -15,7 +15,7 @@ export function Portfolio() {
 
 	return (
 		<div className="page">
-			<div className="portfolio-section portfolio-slide-down">
+			<div className="panel portfolio-section portfolio-slide-down">
 				<PortfolioButton
 					activePortfolio={activePortfolio}
 					setActivePortfolio={setActivePortfolio}

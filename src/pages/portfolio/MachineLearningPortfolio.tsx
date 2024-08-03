@@ -37,7 +37,7 @@ export function MachineLearningPortfolio() {
 				techUsed={["Python", "Git", "GitHub"]}
 				linkButtons={[
 					<a
-						className="portfolio-item--links-item"
+						className="panel portfolio-item--links-item"
 						key={"python-random-forest-link-1"}
 						href="https://github.com/ydnamjs/random-forest-python"
 						target="_blank"

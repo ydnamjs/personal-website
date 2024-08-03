@@ -12,13 +12,13 @@ export function AboutMe() {
 		<div className="page">
 			<NameHeader></NameHeader>
 			<div className="about-me--middle-row">
-				<div className="about-me-section">
+				<div className="panel about-me-section">
 					<h2>Software Engineering</h2>
 				</div>
-				<div className="about-me-section">
+				<div className="panel about-me-section">
 					<h2>Machine Learning</h2>
 				</div>
-				<div className="about-me-section">
+				<div className="panel about-me-section">
 					<h2>Game Development</h2>
 				</div>
 			</div>

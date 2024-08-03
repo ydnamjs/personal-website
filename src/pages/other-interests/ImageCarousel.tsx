@@ -37,7 +37,7 @@ export function ImageCarousel({
 	return (
 		<div className={isSlideLeft ? "carousel-slide-left" : "carousel-slide-right"}>
 			<h2
-				className="carousel--heading"
+				className="panel carousel--heading"
 				style={{
 					width:
 						width > 940 ? "890px"
@@ -49,7 +49,7 @@ export function ImageCarousel({
 			</h2>
 			<div className="carousel" ref={elementRef}>
 				<button
-					className="carousel-button"
+					className="panel carousel-button"
 					onClick={() => {
 						setIndex((index - 1 + items.length) % items.length);
 					}}
@@ -60,7 +60,7 @@ export function ImageCarousel({
 				{width > 660 && <div>{items[(index + 1) % items.length]}</div>}
 				{width > 940 && <div>{items[(index + 2) % items.length]}</div>}
 				<button
-					className="carousel-button"
+					className="panel carousel-button"
 					onClick={() => {
 						setIndex((index + 1) % items.length);
 					}}
