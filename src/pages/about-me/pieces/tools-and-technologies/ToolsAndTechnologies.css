@@ -18,3 +18,10 @@
 		margin-left: -5px;
 	}
 }
+
+@media (max-width: 550px) {
+	.selector-buttons--row {
+		display: flex;
+		flex-direction: column;
+	}
+}
