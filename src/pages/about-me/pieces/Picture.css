@@ -4,3 +4,10 @@
 	animation: slideright 0.5s forwards;
 	padding: 10px;
 }
+
+@media (max-width: 750px) {
+	.picture-section {
+		max-height: none;
+		height: 90vw;
+	}
+}
