@@ -24,8 +24,31 @@
 	margin-right: auto;
 	margin-top: 15px;
 	margin-bottom: 0;
+	vertical-align: center;
+}
+
+.carousel-card--label-single-line {
+	line-height: 0;
 }
 
 .album-name {
 	font-style: italic;
+}
+
+@media (max-width: 500px) {
+	.carousel-card {
+		max-width: 360px;
+		width: 95vw;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
+	.carousel-card--image {
+		max-width: 360px;
+		width: 95vw;
+	}
+	.carousel-card--label {
+		max-width: 350px;
+		width: 95vw;
+	}
 }
