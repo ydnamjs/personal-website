@@ -11,3 +11,10 @@
 .selector-buttons--row {
 	float: right;
 }
+
+@media (max-width: 750px) {
+	.selector-buttons--row {
+		float: none;
+		margin-left: -5px;
+	}
+}
