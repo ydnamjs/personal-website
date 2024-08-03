@@ -89,4 +89,7 @@
 		max-width: 340px;
 		width: 95vw;
 	}
+	.carousel-button img {
+		transform: rotate(90deg);
+	}
 }
