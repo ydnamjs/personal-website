@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import "./App.css";
-import {Helmet} from "react-helmet";
 import {AboutMe} from "./pages/about-me/AboutMe";
 import {PageSelector} from "./PageSelector";
 import {ContactPlusLinks} from "./pages/contact-plus-links/ContactPlusLinks";
@@ -14,10 +13,6 @@ function App() {
 
 	return (
 		<div className="background">
-			<Helmet>
-				<title>Michael Snead</title>
-				<meta name="description" content="Michael Snead | Personal Website"></meta>
-			</Helmet>
 			<div className="navigation-bar">
 				<PageSelector page={page} setPage={setPage} buttonPage={"About"}></PageSelector>
 				<PageSelector page={page} setPage={setPage} buttonPage={"Portfolio"}></PageSelector>
