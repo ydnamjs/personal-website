@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "../../App.css";
 import "./Portfolio.css";
 import "./pieces/PortfolioItem.css";
 
@@ -13,7 +14,7 @@ export function Portfolio() {
 	const [activePortfolio, setActivePortfolio] = useState<Portfolio>("Web Dev");
 
 	return (
-		<div className="portfolio-page">
+		<div className="page">
 			<div className="portfolio-section portfolio-slide-down">
 				<PortfolioButton
 					activePortfolio={activePortfolio}

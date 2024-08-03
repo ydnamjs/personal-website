@@ -1,4 +1,4 @@
-.background {
+.app {
 	background-color: #191a19;
 	width: 100%;
 	height: 100%;
@@ -21,4 +21,35 @@
 	position: sticky;
 	top: 0;
 	z-index: 1;
+}
+
+.page {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	word-break: break-all;
+	color: #d8e9a8;
+
+	width: 100%;
+	max-width: 960px;
+}
+
+.app h1,
+.app h2 {
+	color: #4e9f3d;
+}
+
+.app h1 {
+	font-size: xx-large;
+}
+
+.app h2 {
+	font-size: x-large;
+}
+
+.app h3 {
+	font-size: large;
+	color: #d8e9a8;
 }

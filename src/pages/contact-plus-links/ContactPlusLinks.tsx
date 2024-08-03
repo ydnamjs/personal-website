@@ -1,4 +1,5 @@
 import React from "react";
+import "../../App.css";
 import "./ContactPlusLinks.css";
 
 import toast, {Toaster} from "react-hot-toast";
@@ -10,7 +11,7 @@ import gitHubIconWhite from "../../assets/contact-plus-links/GitHub_Icon_White.p
 
 export function ContactPlusLinks() {
 	return (
-		<div className="contact-plus-links-page">
+		<div className="page">
 			<div className="contact-plus-links--row">
 				<div>
 					<button

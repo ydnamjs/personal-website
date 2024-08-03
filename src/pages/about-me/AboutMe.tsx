@@ -1,4 +1,5 @@
 import React from "react";
+import "../../App.css";
 import "./AboutMe.css";
 
 import {NameHeader} from "./pieces/NameHeader";
@@ -8,7 +9,7 @@ import {ToolsAndTechnologies} from "./pieces/tools-and-technologies/ToolsAndTech
 
 export function AboutMe() {
 	return (
-		<div className="about-me-page">
+		<div className="page">
 			<NameHeader></NameHeader>
 			<div className="about-me--middle-row">
 				<div className="about-me-section">

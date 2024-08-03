@@ -12,7 +12,7 @@ function App() {
 	const [page, setPage] = useState<PageType>("About");
 
 	return (
-		<div className="background">
+		<div className="app">
 			<div className="navigation-bar">
 				<PageSelector page={page} setPage={setPage} buttonPage={"About"}></PageSelector>
 				<PageSelector page={page} setPage={setPage} buttonPage={"Portfolio"}></PageSelector>
