@@ -5,7 +5,7 @@ export function AlbumCard({src, title, band}: {src: string; title: string; band:
 	return (
 		<div className="carousel-card">
 			<img src={src} className="carousel-card--image"></img>
-			<p className="carousel-card--label">
+			<p className="panel carousel-card--label">
 				<span className="album-name">{title}</span>
 				<br />
 				{band}

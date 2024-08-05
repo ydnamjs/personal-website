@@ -1,8 +1,8 @@
-.page-selector {
+.page-selector--active,
+.page-selector--inactive {
 	background-color: transparent;
 	border-color: transparent;
 	border-radius: 5px;
-	color: #a1a1aa;
 	cursor: pointer;
 }
 
@@ -13,8 +13,9 @@
 
 .page-selector--inactive {
 	background-color: transparent;
+	color: #a1a1aa;
 }
 
-.page-selector:hover {
+.page-selector--inactive:hover {
 	color: white;
 }

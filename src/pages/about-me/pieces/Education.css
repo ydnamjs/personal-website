@@ -3,4 +3,5 @@
 	text-align: left;
 	padding: 25px;
 	animation: slideleft 0.5s forwards;
+	flex-grow: 1;
 }

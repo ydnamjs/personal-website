@@ -4,5 +4,5 @@ import "../AboutMe.css";
 import "./Picture.css";
 
 export function Picture() {
-	return <img src={pictureOfMe} className="about-me-section picture-section"></img>;
+	return <img src={pictureOfMe} className="panel about-me-section picture-section"></img>;
 }

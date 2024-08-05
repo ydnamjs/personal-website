@@ -13,11 +13,7 @@ export function PageSelector({
 }) {
 	return (
 		<button
-			className={
-				page === buttonPage ?
-					"page-selector page-selector--active"
-				:	"page-selector page-selector--inactive"
-			}
+			className={page === buttonPage ? "page-selector--active" : "page-selector--inactive"}
 			onClick={() => {
 				setPage(buttonPage);
 			}}

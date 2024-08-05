@@ -15,7 +15,7 @@ export function GamesPortfolio() {
 				techUsed={["TypeScript", "Phazer 3", "Node Package Manager", "Git", "GitHub"]}
 				linkButtons={[
 					<a
-						className="portfolio-item--links-item"
+						className="panel portfolio-item--links-item"
 						key={"build-blocks-link-1"}
 						href="https://spring-2023-cisc374.github.io/group-project-build-blocks/"
 						target="_blank"
@@ -24,7 +24,7 @@ export function GamesPortfolio() {
 						Live Deployment
 					</a>,
 					<a
-						className="portfolio-item--links-item"
+						className="panel portfolio-item--links-item"
 						key={"build-blocks-link-2"}
 						href="https://github.com/Spring-2023-CISC374/group-project-build-blocks"
 						target="_blank"

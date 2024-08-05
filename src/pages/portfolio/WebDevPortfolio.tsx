@@ -28,7 +28,7 @@ export function WebDevPortfolio() {
 				]}
 				linkButtons={[
 					<a
-						className="portfolio-item--links-item"
+						className="panel portfolio-item--links-item"
 						key={"sound-ificator-inator-link-1"}
 						href="https://github.com/ydnamjs/personal-website"
 						target="_blank"
@@ -68,7 +68,7 @@ export function WebDevPortfolio() {
 				]}
 				linkButtons={[
 					<a
-						className="portfolio-item--links-item"
+						className="panel portfolio-item--links-item"
 						key={"sound-ificator-inator-link-1"}
 						href="https://devpost.com/software/sound-ificator-inator"
 						target="_blank"
@@ -77,7 +77,7 @@ export function WebDevPortfolio() {
 						Dev Post
 					</a>,
 					<a
-						className="portfolio-item--links-item"
+						className="panel portfolio-item--links-item"
 						key={"sound-ificator-inator-link-2"}
 						href="https://www.youtube.com/watch?v=qyBQygNTVF8"
 						target="_blank"
@@ -86,7 +86,7 @@ export function WebDevPortfolio() {
 						Video Demo
 					</a>,
 					<a
-						className="portfolio-item--links-item"
+						className="panel portfolio-item--links-item"
 						key={"sound-ificator-inator-link-3"}
 						href="https://github.com/henhackz/henhacks.github.io"
 						target="_blank"
@@ -117,7 +117,7 @@ export function WebDevPortfolio() {
 				]}
 				linkButtons={[
 					<a
-						className="portfolio-item--links-item"
+						className="panel portfolio-item--links-item"
 						key={"cork-board-link-1"}
 						href="https://bkbranson.github.io/team-2-final-project/"
 						target="_blank"
@@ -126,7 +126,7 @@ export function WebDevPortfolio() {
 						Live Deployment
 					</a>,
 					<a
-						className="portfolio-item--links-item"
+						className="panel portfolio-item--links-item"
 						key={"cork-board-link-2"}
 						href="https://github.com/bkbranson/team-2-final-project"
 						target="_blank"

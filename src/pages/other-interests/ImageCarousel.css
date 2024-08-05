@@ -21,10 +21,8 @@
 .carousel-button {
 	width: 50px;
 	cursor: pointer;
-	background-color: #2d2e2d;
 	border-color: transparent;
 	border-style: solid;
-	border-radius: 10px;
 	margin: 0;
 }
 
@@ -43,13 +41,55 @@
 	color: #4e9f3d;
 	text-align: center;
 
-	width: max-content;
+	max-width: 890px;
 
 	margin-bottom: 15px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
+}
 
-	border-radius: 10px;
-	background-color: #2d2e2d;
+@media (max-width: 940px) {
+	.carousel--container-c {
+		display: none;
+	}
+	.carousel--heading {
+		max-width: 625px;
+	}
+}
+
+@media (max-width: 660px) {
+	.carousel--container-b {
+		display: none;
+	}
+	.carousel--heading {
+		max-width: 360px;
+	}
+}
+
+@media (max-width: 500px) {
+	.carousel {
+		flex-direction: column;
+	}
+	.carousel-button {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 360px;
+		width: 95vw;
+	}
+	.carousel--container-a {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 360px;
+		width: 95vw;
+		justify-content: center;
+		display: flex;
+	}
+	.carousel--heading {
+		max-width: 340px;
+		width: 95vw;
+	}
+	.carousel-button img {
+		transform: rotate(90deg);
+	}
 }

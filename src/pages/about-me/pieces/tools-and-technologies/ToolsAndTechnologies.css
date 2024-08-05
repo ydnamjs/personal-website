@@ -11,3 +11,17 @@
 .selector-buttons--row {
 	float: right;
 }
+
+@media (max-width: 750px) {
+	.selector-buttons--row {
+		float: none;
+		margin-left: -5px;
+	}
+}
+
+@media (max-width: 550px) {
+	.selector-buttons--row {
+		display: flex;
+		flex-direction: column;
+	}
+}

@@ -17,7 +17,7 @@ export function PortfolioItem({
 }) {
 	return (
 		<div className={isAnimationLeft ? "portfolio-item-left" : "portfolio-item-right"}>
-			<div className="portfolio-section portfolio-item--info">
+			<div className="panel portfolio-section portfolio-item--info">
 				<h2 className="portfolio-item--heading">{title}</h2>
 				{description}
 				<div className="tech-used">
