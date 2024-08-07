@@ -10,7 +10,7 @@ export function MachineLearningPortfolio() {
 					<>
 						<p>
 							Computer Vision model for segmententing and classifying polyhedral dice
-							for to create a dice tower which sums up all dice rolled at the bottom.
+							to create a dice tower which sums up all dice rolled at the bottom.
 						</p>
 						<p>Work In Progress!</p>
 					</>
@@ -18,6 +18,7 @@ export function MachineLearningPortfolio() {
 				techUsed={[
 					"Python",
 					"Pytorch",
+					"Torchvision",
 					"OpenCV",
 					"Pyinvoke",
 					"Blender",
