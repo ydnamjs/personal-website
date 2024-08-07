@@ -16,7 +16,7 @@ Check out the deployed site at: https://ydnamjs.github.io/personal-website/
 - Husky (For enfocing linter before commits)
 
 ## Installation and Usage
-1. Clone the repository: `git clone https://github.com/username/project.git](https://github.com/ydnamjs/personal-website.git`
+1. Clone the repository: `git clone https://github.com/username/project.git`
 2. Navigate into the repository: `cd personal-website/`
 3. Install dependencies: `npm i`
 4. Run a local version of the site: `npm run start`
