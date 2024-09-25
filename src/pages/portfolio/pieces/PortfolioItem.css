@@ -14,9 +14,9 @@
 }
 
 .portfolio-item--info {
-	flex-grow: 1;
 	word-break: normal;
 	word-wrap: normal;
+	width: 100%;
 }
 
 .portfolio-item--heading {
