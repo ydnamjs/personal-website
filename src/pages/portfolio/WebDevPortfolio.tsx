@@ -5,6 +5,70 @@ export function WebDevPortfolio() {
 	return (
 		<>
 			<PortfolioItem
+				title="D6 Counter Web Showcase"
+				description={
+					<>
+						<p>
+							A full stack web application for showcasing my six sided dice counter.
+							Front End built with React.js and Typescript. Backend built with python
+							and deployed on AWS.
+						</p>
+					</>
+				}
+				techUsed={[
+					"Amazon Web Services (AWS)",
+					"Docker",
+					"API Development",
+					"FastAPI",
+					"Python",
+					"React",
+					"Typescript",
+					"HTML",
+					"CSS",
+					"Git",
+					"GitHub",
+					"Node Package Manager",
+					"ESLint",
+					"Husky",
+				]}
+				linkButtons={[
+					<a
+						className="panel portfolio-item--links-item"
+						key={"d6-counter-link-1"}
+						href="https://ydnamjs.github.io/d6-counter-frontend/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Live
+						<br />
+						Deployment
+					</a>,
+					<a
+						className="panel portfolio-item--links-item"
+						key={"d6-counter-link-2"}
+						href="https://github.com/ydnamjs/d6-counter-backend-lambda"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Back End
+						<br />
+						Source Code
+					</a>,
+					<a
+						className="panel portfolio-item--links-item"
+						key={"d6-counter-link-3"}
+						href="https://github.com/ydnamjs/d6-counter-frontend"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Front End
+						<br />
+						Source Code
+					</a>,
+				]}
+				isAnimationLeft={true}
+			/>
+			<PortfolioItem
 				title="Personal Website"
 				description={
 					<>
@@ -29,7 +93,7 @@ export function WebDevPortfolio() {
 				linkButtons={[
 					<a
 						className="panel portfolio-item--links-item"
-						key={"sound-ificator-inator-link-1"}
+						key={"personal-website-link-1"}
 						href="https://github.com/ydnamjs/personal-website"
 						target="_blank"
 						rel="noreferrer"
@@ -37,7 +101,7 @@ export function WebDevPortfolio() {
 						Source Code
 					</a>,
 				]}
-				isAnimationLeft={true}
+				isAnimationLeft={false}
 			/>
 			<PortfolioItem
 				title={"Sound-ificator-inator"}
@@ -95,7 +159,7 @@ export function WebDevPortfolio() {
 						Source Code
 					</a>,
 				]}
-				isAnimationLeft={false}
+				isAnimationLeft={true}
 			/>
 			<PortfolioItem
 				title={"Corkboard Website"}
@@ -135,7 +199,7 @@ export function WebDevPortfolio() {
 						Source Code
 					</a>,
 				]}
-				isAnimationLeft={true}
+				isAnimationLeft={false}
 			/>
 		</>
 	);
