@@ -5,14 +5,13 @@ export function MachineLearningPortfolio() {
 	return (
 		<>
 			<PortfolioItem
-				title={"Automatic Dice Counter"}
+				title={"Automatic D6 Counter"}
 				description={
 					<>
 						<p>
-							Computer Vision model for segmententing and classifying polyhedral dice
-							to create a dice tower which sums up all dice rolled at the bottom.
+							Computer Vision model for detecting and classifying six sided dice in
+							images
 						</p>
-						<p>Work In Progress!</p>
 					</>
 				}
 				techUsed={[
@@ -24,7 +23,17 @@ export function MachineLearningPortfolio() {
 					"Blender",
 					"Blender Python API",
 				]}
-				linkButtons={[]}
+				linkButtons={[
+					<a
+						className="panel portfolio-item--links-item"
+						key={"d6-counter-link-1"}
+						href="https://ydnamjs.github.io/d6-counter-frontend/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Web Showcase
+					</a>,
+				]}
 				isAnimationLeft={true}
 			/>
 			<PortfolioItem
