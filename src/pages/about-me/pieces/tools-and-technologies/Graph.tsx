@@ -12,23 +12,23 @@ interface GraphData {
 const graphKey = new Map<GraphType, GraphData>();
 graphKey.set("Machine Learning", {
 	items: ["Python", "PyTorch", "OpenCV"],
-	experience: [4, 1, 1],
-	yInterval: 1,
-	numLevels: 5,
+	experience: [5, 2, 2],
+	yInterval: 2,
+	numLevels: 10,
 });
 
 graphKey.set("Game Development", {
-	items: ["Unreal Engine 4", "Godot", "Blender", "C++"],
-	experience: [1.99999, 1, 1, 1],
+	items: ["Godot", "UE4", "Blender", "C++"],
+	experience: [3, 2, 1, 1],
 	yInterval: 1,
 	numLevels: 5,
 });
 
 graphKey.set("Web Development", {
 	items: ["Java/Type Script", "React.js", "Relational Databases", "Document Databases"],
-	experience: [1.99999, 1.99999, 1, 1],
-	yInterval: 1,
-	numLevels: 5,
+	experience: [8, 6, 1, 1],
+	yInterval: 2,
+	numLevels: 10,
 });
 
 export function ToolsAndTechnologiesGraph({graphType}: {graphType: GraphType}) {
