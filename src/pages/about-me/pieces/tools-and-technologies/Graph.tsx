@@ -13,7 +13,7 @@ const graphKey = new Map<GraphType, GraphData>();
 graphKey.set("Machine Learning", {
 	items: ["Python", "PyTorch", "OpenCV"],
 	experience: [5, 2, 2],
-	yInterval: 2,
+	yInterval: 1,
 	numLevels: 10,
 });
 
@@ -27,7 +27,7 @@ graphKey.set("Game Development", {
 graphKey.set("Web Development", {
 	items: ["Java/Type Script", "React.js", "Relational Databases", "Document Databases"],
 	experience: [8, 6, 1, 1],
-	yInterval: 2,
+	yInterval: 1,
 	numLevels: 10,
 });
 
